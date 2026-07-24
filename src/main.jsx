@@ -13,7 +13,7 @@ createRoot(document.getElementById("root")).render(
     <ToastProvider>
       <DataProvider>
         <AuthProvider>
-          <BrowserRouter basename="/Karyar-Studio">
+          <BrowserRouter>
             <App />
           </BrowserRouter>
         </AuthProvider>
