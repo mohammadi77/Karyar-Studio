@@ -1,0 +1,235 @@
+.field-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.field-row-label {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 13px;
+  color: #2f4858;
+  font-weight: 600;
+}
+.field-row-key {
+  font-size: 10px;
+  color: #9ba1a8;
+  font-family: monospace;
+  direction: ltr;
+  font-weight: 400;
+}
+
+.field-input,
+.field-textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #dcdfe3;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+.field-input:focus,
+.field-textarea:focus {
+  border-color: #1ea965;
+}
+.field-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.field-input[type="color"] {
+  width: 44px;
+  height: 42px;
+  padding: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.field-color-row {
+  display: flex;
+  gap: 8px;
+}
+.field-color-hex {
+  flex: 1;
+}
+.field-input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.field-group {
+  border: 1px dashed #dcdfe3;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field-array {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.field-array-item {
+  border: 1px solid #edf2f3;
+  border-radius: 10px;
+  padding: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.field-array-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.field-array-item-index {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1ea965;
+  background: none;
+  border: none;
+  padding: 4px 2px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.field-array-item-index:hover {
+  text-decoration: underline;
+}
+.field-array-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.field-array-item-move {
+  border: 1px solid #dcdfe3;
+  background: #ffffff;
+  color: #5c6a63;
+  border-radius: 6px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+}
+.field-array-item-move:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.field-array-item-remove {
+  border: none;
+  background: #fdecea;
+  color: #c0392b;
+  border-radius: 6px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.field-input-readonly {
+  background: #f2f4f5;
+  color: #9ba1a8;
+  cursor: not-allowed;
+}
+.field-array-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #edf2f3;
+  border-radius: 10px;
+}
+.field-array-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.field-array-table th {
+  text-align: right;
+  color: #5c6a63;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-bottom: 1px solid #edf2f3;
+  white-space: nowrap;
+}
+.field-array-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #f2f4f5;
+  vertical-align: middle;
+}
+.field-array-table tr:last-child td {
+  border-bottom: none;
+}
+.field-array-row-disabled {
+  opacity: 0.55;
+}
+.field-array-table-move-col,
+.field-array-table-actions-col {
+  width: 1%;
+}
+.field-array-table-move {
+  display: flex;
+  gap: 4px;
+  white-space: nowrap;
+}
+.field-array-table-name {
+  color: #2f4858;
+  font-weight: 600;
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.field-array-table-actions {
+  display: flex;
+  gap: 6px;
+  white-space: nowrap;
+}
+.field-array-table-edit {
+  border: 1px solid #dcdfe3;
+  background: #ffffff;
+  color: #5c6a63;
+  border-radius: 6px;
+  padding: 0 12px;
+  height: 26px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.field-array-toggle-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.field-array-toggle-btn.on {
+  background: #e2f2ea;
+  color: #1ea965;
+}
+.field-array-toggle-btn.off {
+  background: #fdecea;
+  color: #c0392b;
+}
+
+.field-array-add {
+  align-self: flex-start;
+  border: 1px dashed #1ea965;
+  background: transparent;
+  color: #1ea965;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+}

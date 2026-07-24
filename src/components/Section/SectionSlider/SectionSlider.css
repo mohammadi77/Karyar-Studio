@@ -1,0 +1,215 @@
+/* ============================================
+   استایل‌های پایه (دسکتاپ)
+   ============================================ */
+
+.section-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  direction: rtl;
+  box-sizing: border-box;
+  width: 100%;
+  height: 428px;
+  background-color: transparent;
+}
+
+/* ----- بخش راست (متن) ----- */
+.section-slider__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  padding-right: 32px;
+}
+
+.section-slider__title {
+  width: 70%;
+  margin: 0;
+  font-family: "Vazir FD-WOL";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 140%;
+  text-align: right;
+
+  /* محدودیت دو خط */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section-slider__description {
+  width: 100%;
+  margin: 24px 0 24px;
+  font-family: "Vazir FD-WOL";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  text-align: right;
+
+  /* محدودیت پنج خط */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ----- بخش چپ (تصویر) ----- */
+.section-slider__left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-self: end;
+}
+
+.section-slider__shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 29%;
+  aspect-ratio: 1;
+  border-bottom-right-radius: 42.7%;
+  z-index: 1;
+}
+
+.section-slider__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-bottom-right-radius: 32px;
+  z-index: 2;
+  max-width: 570px;
+  min-width: 330px;
+}
+
+/* ============================================
+   تبلت (حداکثر عرض ۱۱۷۶ پیکسل)
+   ============================================ */
+
+@media (max-width: 1176px) {
+  .section-slider__right {
+    width: 86%;
+  }
+}
+
+@media (min-width: 884px) and (max-width: 1192px) {
+  .section-slider__shape {
+    right: -43px;
+  }
+}
+
+@media (min-width: 736px) and (max-width: 884px) {
+  .section-slider__shape {
+    right: -25px;
+    bottom: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section-slider__title {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-slider {
+    height: 340px;
+  }
+
+  .section-slider__right {
+    width: 90%;
+  }
+
+  .section-slider__title {
+    font-size: 18px;
+  }
+
+  .section-slider__description {
+    font-size: 13px;
+  }
+
+  .section-slider__image {
+    height: 297px;
+  }
+}
+@media (max-width: 770px) {
+  .section-slider__title {
+    font-size: 17px;
+  }
+}
+/* ============================================
+   موبایل (حداکثر عرض ۷۳۵ پیکسل)
+   ============================================ */
+
+@media (max-width: 735px) {
+  .section-slider {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    height: fit-content;
+    justify-items: center;
+  }
+
+  /* تغییر ترتیب: تصویر اول، متن دوم */
+  .section-slider__left {
+    order: 1;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    height: 249px;
+    justify-self: center;
+  }
+
+  .section-slider__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 220px;
+    object-fit: cover;
+    border-bottom-right-radius: 32px;
+    max-width: 330px;
+  }
+
+  .section-slider__shape {
+    position: absolute;
+    right: 13px;
+    bottom: 0;
+    width: 108px;
+    height: 108px;
+    border-bottom-right-radius: 62px;
+  }
+
+  .section-slider__right {
+    order: 2;
+    width: 100%;
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .section-slider__title {
+    width: 100%;
+    padding: 0 32px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .section-slider__description {
+    width: 100%;
+    padding: 0 21px;
+    margin: 20px 0 28px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  /* دکمه در مرکز */
+  .section-slider__right .custom-btn {
+    align-self: center;
+  }
+}

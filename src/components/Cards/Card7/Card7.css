@@ -1,0 +1,167 @@
+.card7 {
+  /* height:100% + parent grid align-items:stretch keeps every card the
+     same height regardless of its own text length. */
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  box-sizing: border-box;
+
+  position: relative;
+  overflow: hidden;
+
+  padding: 24px;
+  padding-top: 76px; /* clears the absolutely positioned icon/number row */
+
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 0 16px #b3b3b340;
+
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+/* Big faded number behind everything, top-left of the card */
+.card7-number-bg {
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  z-index: 0;
+
+  font-family: Estedad-VF, sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
+
+  /* Solid fallback color via text-clip so the same declaration also
+     works when a real gradient is passed through numberGradient */
+  background-image: linear-gradient(
+    180deg,
+    rgba(47, 72, 88, 0.12),
+    rgba(47, 72, 88, 0.12)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Round icon badge, top-right of the card */
+.card7-icon-box {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  z-index: 1;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card7-icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card7-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.fallback-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.card7-content {
+  position: relative;
+  z-index: 1;
+  direction: rtl;
+}
+
+.card7-title,
+.card7-text {
+  font-family: Estedad-VF, sans-serif;
+  text-align: right;
+}
+
+.card7-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.card7-text {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .card7 {
+    padding: 20px;
+    padding-top: 68px;
+    min-height: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .card7 {
+    min-height: 180px;
+    border-radius: 16px;
+    box-shadow: 0 0 16px #a6a6a640;
+    padding: 16px;
+    padding-top: 56px;
+  }
+
+  .card7-number-bg {
+    font-size: 40px;
+    top: 2px;
+    left: 12px;
+  }
+
+  .card7-icon-box {
+    width: 36px;
+    height: 36px;
+    top: 14px;
+    right: 16px;
+  }
+
+  .card7-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .card7-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .card7-text {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    -webkit-line-clamp: 4;
+  }
+}

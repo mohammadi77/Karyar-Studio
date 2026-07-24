@@ -1,0 +1,134 @@
+/* SectionFooter.css */
+
+.footer {
+  direction: rtl;
+  padding: 20px 0 10px;
+}
+
+/* بخش بالایی (لوگو + شبکه‌های اجتماعی) */
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 16px;
+  padding: 0 72px;
+}
+
+/* لوگو و عنوان */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoBox {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.logoText {
+  font-family: Vazir FD-WOL;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: right;
+}
+
+/* شبکه‌های اجتماعی */
+.socialLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.socialLink {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.socialLink:hover {
+  transform: scale(1.1);
+}
+
+/* خط جداکننده */
+.divider {
+  margin: 8px 0 16px 0;
+}
+
+/* بخش پایینی (متن و کپی‌رایت) */
+.bottomSection {
+  text-align: center;
+  padding: 0 72px;
+}
+
+.infoText {
+  font-family: Vazir FD-WOL;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ====== ریسپانسیو موبایل ====== */
+@media (max-width: 768px) {
+  /* بخش بالایی عمودی و وسط‌چین */
+  .topSection {
+    flex-direction: column; /* عناصر زیر هم قرار بگیرند */
+    margin: 0 auto;
+    align-items: center; /* وسط‌چین عمودی */
+    justify-content: center; /* وسط‌چین افقی */
+    gap: 12px;
+    width: fit-content;
+  }
+
+  /* لوگو و عنوان وسط‌چین */
+  .logoContainer {
+    justify-content: center; /* وسط‌چین کردن محتوا */
+  }
+
+  .logoText {
+    font-family: Vazir FD-WOL;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center; /* وسط‌چین در موبایل */
+  }
+
+  /* شبکه‌های اجتماعی وسط‌چین */
+  .socialLinks {
+    justify-content: space-between; /* وسط‌چین کردن آیکون‌ها */
+    width: 100%;
+  }
+
+  .socialLink {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* متن توضیحی وسط‌چین */
+  .infoText {
+    font-family: Vazir FD-WOL;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10px;
+    line-height: 1.2;
+    text-align: center; /* وسط‌چین در موبایل */
+  }
+}

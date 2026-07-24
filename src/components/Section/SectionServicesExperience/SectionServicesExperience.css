@@ -1,0 +1,20 @@
+/* SectionServicesExperience.css */
+
+/* عنوان کلی سکشن */
+.sse-section-title {
+  margin: 0 0 24px;
+  font-family: "Vazir FD-WOL";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--Text-Title, #2f4858);
+}
+
+@media (max-width: 735px) {
+  .sse-section-title {
+    padding: 0 32px;
+    font-size: 18px;
+  }
+}

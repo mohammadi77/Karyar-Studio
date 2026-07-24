@@ -1,0 +1,51 @@
+.team-member-form {
+  align-items: flex-start;
+}
+.team-member-form-image {
+  min-width: 260px;
+}
+.team-member-active-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #2f4858;
+  font-weight: 600;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.team-member-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.team-member-card-info {
+  flex: 1;
+  min-width: 0;
+}
+.team-member-card-info h3 {
+  font-size: 15px;
+  color: #2f4858;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.team-member-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e2f2ea;
+  color: #1ea965;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.team-member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

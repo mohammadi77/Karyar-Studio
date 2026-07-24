@@ -1,0 +1,1371 @@
+{
+  "pages": [
+    {
+      "id": "home",
+      "name": "صفحه اصلی",
+      "slug": "",
+      "sections": [
+        {
+          "id": "home-1",
+          "type": "SectionSlider",
+          "data": {
+            "title": "اینجا هر ایده‌ای شانس تبدیل شدن به محصول را دارد",
+            "description": "ما با تحلیل دقیق، طراحی کاربردی و اجرای فرآیندمحور، به شما کمک می‌کنیم ایده‌هایتان را به محصولاتی واقعی، قابل استفاده و ارزش‌آفرین تبدیل کنید.",
+            "image": "/uploads/1784117664823-py27gm.png",
+            "titleColor": "#2F4858",
+            "textColor": "#5C6A63",
+            "bgShapeColor": "#FCEDDE",
+            "button": {
+              "text": "شروع همکاری",
+              "link": "/",
+              "iconName": "arrow_left",
+              "bgColor": "#FB7A01",
+              "textColor": "#FFFFFF",
+              "iconColor": "#FFFFFF"
+            }
+          },
+          "mode": "custom"
+        },
+        {
+          "id": "home-2",
+          "type": "SectionLogos",
+          "data": [
+            {
+              "id": 1,
+              "title": "دیجی کالا",
+              "image": "/uploads/1784204789433-kydpq8.png",
+              "link": "https://www.digikala.com/"
+            },
+            {
+              "id": 2,
+              "title": "کاریار",
+              "image": "/uploads/1784204824644-sjhkfx.png",
+              "link": "https://kaaryar.ir/"
+            },
+            {
+              "id": 3,
+              "title": "اکیپ",
+              "image": "/uploads/1784204861144-qgl9lu.png",
+              "link": "https://a-keep.com/"
+            },
+            {
+              "id": 4,
+              "title": "سام پارس ترابر",
+              "image": "/uploads/1784204903913-j7r5r7.png",
+              "link": "https://www.sp-tarabar.com/"
+            },
+            {
+              "id": 5,
+              "title": "دیوار",
+              "image": "/uploads/1784204931148-cdd0h3.png",
+              "link": "https://divar.ir/"
+            }
+          ]
+        },
+        {
+          "id": "home-3",
+          "type": "SectionServices",
+          "data": {
+            "title": "کاریار استودیو، جایی که ایده‌ها  به تجربه تبدیل می‌شوند",
+            "titleColor": "#2F4858",
+            "cardTitleColor": "#2F4858",
+            "cardDescriptionColor": "#5C6A63",
+            "cardShadowColor": "#00ffff",
+            "cardBgColor": "#FFFFFF",
+            "button": {
+              "text": "خدمات ما",
+              "link": "",
+              "iconName": "arrow_left",
+              "bgColor": "#1EA965",
+              "textColor": "#FFFFFF",
+              "iconColor": "#FFFFFF"
+            },
+            "services": [
+              {
+                "id": 1,
+                "icon": "pen",
+                "title": "طراحی محصول",
+                "description": "با بررسی مسئله، شناخت کاربران و طراحی تجربه‌ای دقیق، محصولاتی قابل اعتماد و مؤثر ارائه می‌دهیم.",
+                "iconBgColor": "#E2F2EA",
+                "iconColor": "#1EA965",
+                "shadowColor": "#01B87A29"
+              },
+              {
+                "id": 2,
+                "icon": "pen_line",
+                "title": "طراحی وب‌سایت",
+                "description": "وب‌سایت‌هایی سریع، کاربرپسند و متناسب با اهداف کسب‌وکار شما  پیاده‌سازی می‌کنیم تا حضور دیجیتال برندتان تقویت شود.",
+                "iconBgColor": "#FCEDDE",
+                "iconColor": "#FB7A01",
+                "shadowColor": "#FB7A0129"
+              }
+            ]
+          }
+        },
+        {
+          "id": "home-4",
+          "type": "SectionProject",
+          "data": {
+            "title": "پروژه‌هایی که برای ایجاد تجربه‌ای بهتر ساخته شدند",
+            "titleColor": "#2F4858",
+            "cardTitleColor": "#2F4858",
+            "textColor": "#5C6A63",
+            "iconColor": "#5C6A63",
+            "navBgColor": "#F6F6F6",
+            "dotColor": "#EDEDED",
+            "activeDotColor": "#1EA965",
+            "cardBgColor": "#FFFFFF",
+            "beforeImage": "/uploads/1784210596296-m7phn4.png",
+            "afterImage": "/uploads/1784210519733-wjgivt.png",
+            "ArrowLeft": "arrow_circle_right",
+            "ArrowRight": "arrow_circle_left",
+            "projects": [
+              {
+                "id": 1,
+                "image": "/uploads/1784210645616-o6p637.jpg",
+                "logo": "/uploads/1784210708068-n0ns6z.png",
+                "title": "اپلیکیشن ماکاپ‌های پولی",
+                "paragraph": "یک اپلیکیشن حرفه‌ای برای دریافت ماکاپ‌های پریمیوم طراحی کردیم. تمرکز این پروژه روی تجربه کاربری روان، دسته‌بندی هوشمند و ارائه محتوای اختصاصی با کیفیت بالا بود؛ طراحان بتونن سریع، راحت و مطمئن به منابع پولی و حرفه‌ای دسترسی داشته باشن.\nیک اپلیکیشن حرفه‌ای برای دریافت ماکاپ‌های پریمیوم طراحی کردیم. تمرکز این پروژه روی تجربه کاربری روان، دسته‌بندی هوشمند و ارائه محتوای اختصاصی با کیفیت بالا بود؛"
+              },
+              {
+                "id": 2,
+                "image": "/uploads/1784210902529-axukjz.jpg",
+                "logo": "/uploads/1784210910906-xiak1w.png",
+                "title": "سایت ماکاپ‌های رایگان",
+                "paragraph": "سایتی طراحی کردیم که دسترسی سریع و ساده به مجموعه‌ای از ماکاپ‌های رایگان و باکیفیت رو برای طراحان فراهم می‌کنه.  هدف این محصول، ایجاد یک تجربه روان و بدون دردسر برای پیدا کردن ماکاپ مناسب بود؛ جایی که کاربر بدون جست‌وجوی طولانی، مستقیماً به چیزی که نیاز داره برسه."
+              },
+              {
+                "id": 3,
+                "image": "/uploads/1784210939193-a37xii.png",
+                "logo": "/uploads/1784210946391-8n5sy6.png",
+                "title": "سایت ماکاپ‌های رایگان",
+                "paragraph": "سایتی طراحی کردیم که دسترسی سریع و ساده به مجموعه‌ای از ماکاپ‌های رایگان و باکیفیت رو برای طراحان فراهم می‌کنه.  هدف این محصول، ایجاد یک تجربه روان و بدون دردسر برای پیدا کردن ماکاپ مناسب بود؛ جایی که کاربر بدون جست‌وجوی طولانی، مستقیماً به چیزی که نیاز داره برسه."
+              }
+            ]
+          }
+        },
+        {
+          "id": "home-6",
+          "type": "SectionPeople",
+          "data": {
+            "title": "آدم‌هایی که کاریار را معنا می‌کنند",
+            "subtitle": "کاریار استودیو یک تیم متعهد و متخصص است که برای ساخت تجربه‌های ارزشمند کنار هم قرار گرفته‌اند.",
+            "titleColor": "#2F4858",
+            "subtitleColor": "#5C6A63",
+            "firstCardColor": "#FCEDDE",
+            "secondCardColor": "#E2F2EA",
+            "nameColor": "#2F4858",
+            "roleColor": "#5C6A63",
+            "items": [
+              {
+                "memberId": "ie0CvKpgv8k"
+              },
+              {
+                "memberId": "r5VXH3tOL5k"
+              },
+              {
+                "memberId": "7lxp0LTXnWA"
+              },
+              {
+                "memberId": "2mLmuk9AmGs"
+              },
+              {
+                "memberId": "St5i7f8g8xs"
+              },
+              {
+                "memberId": "Q4QQVKesHHs"
+              },
+              {
+                "memberId": "cFWzXWihuJ0"
+              }
+            ]
+          }
+        },
+        {
+          "id": "home-7",
+          "type": "SectionExperience",
+          "data": {
+            "title": "تجربه همکاری از نگاه مشتریان",
+            "subtitle": "بخشی از تجربه‌ کسانی که مسیر ساخت محصولشان را با ما شروع کردند.",
+            "titleColor": "#2F4858",
+            "subtitleColor": "#5C6A63",
+            "highlightColor": "#E2F2EA",
+            "backImage": "/uploads/1784212056597-5cbs9n.png",
+            "cardBgColor": "#FFFFFF",
+            "nameColor": "#2F4858",
+            "jobColor": "#5C6A63",
+            "textColor": "#5C6A63",
+            "quoteIcon": "kama",
+            "quoteIconColor": "#FCEDDE",
+            "arrows": {
+              "activeBg": "#FFFFFF",
+              "inactiveBg": "#FFFFFF",
+              "activeIcon": "#5C6A63",
+              "inactiveIcon": "#BDBEBF",
+              "activeBorder": "#5C6A63",
+              "inactiveBorder": "#BDBEBF",
+              "prevIconId": "arrow_circle_right",
+              "nextIconId": "arrow_circle_left"
+            },
+            "cards": [
+              {
+                "id": 1,
+                "image": "/uploads/1784212146666-6k32a4.png",
+                "name": "سمانه عزیزی",
+                "job": "مدیر محصول در دیوار",
+                "text": "کاریار استودیو تیمی دقیق و قابل‌اعتماده. توی هر مرحله از پروژه، مسئله رو درست فهمیدن و برای ما یه مسیر واضح و قابل‌اجرا ساختن ممنونم از این تیم که تو این پروژه همراه بودن و هر لحظه پیگیری این کار رو انجام میدادن"
+              },
+              {
+                "id": 2,
+                "image": "/uploads/1784212210587-jjgv94.png",
+                "name": "علی کاظمیان",
+                "job": "مدیر ارشد مارکتینگ در دیجی کالا",
+                "text": "از تجربه کاربری تا توسعه، همه‌چیز با دقت و سرعت جلو رفت. چیزی که تحویل گرفتیم دقیقاً همون چیزی بود که اول جلسه‌ها ازش حرف می‌زدیم."
+              }
+            ]
+          }
+        },
+        {
+          "id": "home-8",
+          "type": "SectionBaner",
+          "data": {
+            "backgroundImage": "/uploads/1784212310018-96ly00.png",
+            "title": "مشتاقیم قصه‌ محصول‌ شما رو بسازیم",
+            "titleColor": "#2F4858",
+            "button": {
+              "text": "شروع همکاری",
+              "link": "",
+              "iconName": "arrow_left",
+              "bgColor": "#FB7A01",
+              "textColor": "#FFFFFF",
+              "iconColor": "#FFFFFF"
+            }
+          }
+        },
+        {
+          "id": "s-1784160148247-gseo7",
+          "type": "SectionFooter",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "info": {
+              "iconName": "Logo",
+              "title": "کاریار استودیو",
+              "titleColor": "#2F4858",
+              "lineColor": "#E8E8E8",
+              "text": "تمام حقوق محتوای این سایت متعلق به شرکت کاریار استودیو است.",
+              "textColor": "#5C6A63",
+              "link": ""
+            },
+            "socialLinks": [
+              {
+                "label": "واتس اپ",
+                "href": "#",
+                "iconName": "whatsApp",
+                "iconColor": "#157647"
+              },
+              {
+                "label": "اینستاگرام",
+                "href": "#",
+                "iconName": "instagram",
+                "iconColor": "#157647"
+              },
+              {
+                "label": "لینکدین",
+                "href": "#",
+                "iconName": "link",
+                "iconColor": "#157647"
+              }
+            ]
+          }
+        }
+      ],
+      "enabled": true,
+      "order": 0
+    },
+    {
+      "id": "contact-us",
+      "name": "تماس با ما",
+      "slug": "ContactUs",
+      "sections": [
+        {
+          "id": "contact-us-1",
+          "type": "SectionContactUsContact",
+          "data": {
+            "title": "یک پیام کوتاه،\nنقطه شروع یک همکاری حرفه‌ای است",
+            "titleColor": "#2F4858",
+            "image": "/images/file.png",
+            "iconColor": "#E2F2EA",
+            "iconPhone": "call",
+            "iconPhoneColor": "#2FA36B",
+            "iconPhonebg": "#E7F6EE",
+            "phonNumber": "0912 345 67 89",
+            "phonNumberColor": "#2F4858",
+            "email": "Example@studiokaaryar.ir",
+            "emailColor": "#2F4858",
+            "iconEmail": "sms",
+            "iconEmailColor": "#2FA36B",
+            "iconEmailbg": "#E7F6EE",
+            "addres": "ونک، چهار راه جهان کودک، کوچه عظیمی، پلاک ۱۲، ساختمان نیکا، واحد ۳",
+            "addresColor": "#2F4858",
+            "iconAddres": "location",
+            "iconAddresColor": "#2FA36B",
+            "iconAddresbg": "#E7F6EE"
+          }
+        },
+        {
+          "id": "s-1784318289584-w1v1h",
+          "type": "SectionServicesConstruction",
+          "mode": "reference",
+          "refPageId": "RZHlG9iMHIA",
+          "refSectionId": "s-1784289899022-igzs6",
+          "data": {
+            "title": "عنوان جدید",
+            "subtitle": "",
+            "titleColor": "#2F4858",
+            "subtitleColor": "#5C6A63",
+            "cardBgColor": "#FFFFFF",
+            "cardTitleColor": "#2F4858",
+            "cardTextColor": "#5C6A63",
+            "cards": [
+              {
+                "id": 1,
+                "number": "01",
+                "numberColor": "#2F4858",
+                "numberGradient": "",
+                "title": "",
+                "text": "",
+                "iconName": "",
+                "iconBg": "#e0e0e0",
+                "iconColor": "#333"
+              }
+            ]
+          },
+          "overrides": {
+            "title": "سفر ساخت محصول با کاریار استودیو",
+            "subtitle": " "
+          }
+        },
+        {
+          "id": "contact-us-3",
+          "type": "SectionQuestions",
+          "data": {
+            "title": "سوالاتی که کمک می‌کنند تصمیم بهتری بگیرید",
+            "titleColor": "#2F4858",
+            "beforeColor": "#E2F2EA",
+            "iconColorUp": "#1EA965",
+            "iconColorDown": "#1EA965",
+            "iconColorBg": "#E2F2EA",
+            "iconUp": "arrow_circle_up",
+            "iconDown": "arrow_circle_down",
+            "Questions": [
+              {
+                "title": "فرایند همکاری با کاریار استودیو چطور شروع می‌شود؟",
+                "titleColor": "#2F4858",
+                "text": "بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم.",
+                "textColor": "#5C6A63"
+              },
+              {
+                "title": "هزینه طراحی چطور محاسبه می‌شود؟",
+                "titleColor": "#2F4858",
+                "text": "هزینه طراحی چطور محاسبه می‌شود.",
+                "textColor": "#5C6A63"
+              },
+              {
+                "title": "آیا بعد از تحویل پروژه، پشتیبانی هم دارید؟",
+                "titleColor": "#2F4858",
+                "text": "هزینه طراحی چطور محاسبه می‌شود.",
+                "textColor": "#5C6A63"
+              },
+              {
+                "title": "برای شروع همکاری چه چیزهایی باید آماده داشته باشم؟",
+                "titleColor": "#2F4858",
+                "text": "هزینه طراحی چطور محاسبه می‌شود.",
+                "textColor": "#5C6A63"
+              },
+              {
+                "title": "زمان انجام یک پروژه طراحی محصول یا طراحی وب‌سایت چقدر است؟",
+                "titleColor": "#2F4858",
+                "text": "هزینه طراحی چطور محاسبه می‌شود.",
+                "textColor": "#5C6A63"
+              },
+              {
+                "title": "هزینه طراحی چطور محاسبه می‌شود؟",
+                "titleColor": "#2F4858",
+                "text": "هزینه طراحی چطور محاسبه می‌شود.",
+                "textColor": "#5C6A63"
+              },
+              {
+                "title": "هزینه طراحی چطور محاسبه می‌شود؟",
+                "titleColor": "#2F4858",
+                "text": "هزینه طراحی چطور محاسبه می‌شود.",
+                "textColor": "#5C6A63"
+              }
+            ]
+          },
+          "mode": "reference",
+          "refPageId": "RZHlG9iMHIA",
+          "refSectionId": "s-1784247136492-5caps"
+        },
+        {
+          "id": "footer-4i362ue",
+          "type": "SectionFooter",
+          "data": {
+            "info": {
+              "iconName": "Logo",
+              "title": "کاریار استودیو",
+              "titleColor": "#2F4858",
+              "lineColor": "#E8E8E8",
+              "text": "تمام حقوق محتوای این سایت متعلق به شرکت کاریار استودیو است.",
+              "textColor": "#5C6A63",
+              "link": ""
+            },
+            "socialLinks": [
+              {
+                "label": "واتس اپ",
+                "href": "#",
+                "iconName": "whatsApp",
+                "iconColor": "#157647"
+              },
+              {
+                "label": "اینستاگرام",
+                "href": "#",
+                "iconName": "instagram",
+                "iconColor": "#157647"
+              },
+              {
+                "label": "لینکدین",
+                "href": "#",
+                "iconName": "link",
+                "iconColor": "#157647"
+              }
+            ]
+          },
+          "mode": "reference",
+          "refPageId": "home",
+          "refSectionId": "s-1784160148247-gseo7",
+          "overrides": {}
+        }
+      ],
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "name": "خدمات",
+      "slug": "Services",
+      "sections": [
+        {
+          "id": "s-1784240034888-xkh48",
+          "type": "SectionServicesSlider",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "خدماتی که ایده را به                               محصول واقعی تبدیل می‌کند",
+            "titleColor": "#2F4858",
+            "description": "ما در کاریار استودیو، با ترکیب طراحی محصول و طراحی وب‌سایت، به کسب‌وکارها کمک می‌کنیم مسیر رشدشان را شفاف، سریع و قابل اجرا بسازند.",
+            "descriptionColor": "#5C6A63",
+            "image": "/uploads/1784240115084-jx4n3c.png",
+            "dotImage": "/uploads/1784240129777-42v9d8.png",
+            "items": [
+              {
+                "id": 1,
+                "icon": "pen",
+                "iconBg": "#E2F2EA",
+                "iconColor": "#1EA965",
+                "title": "طراحی محصول",
+                "titleColor": "#2F4858",
+                "description": "محصولاتی می‌سازیم که مسئله‌ درست را حل کنند و تجربه‌ای قابل اعتماد و قابل رشد ارائه دهند.",
+                "descriptionColor": "#5C6A63"
+              },
+              {
+                "id": 2,
+                "icon": "pen_line",
+                "iconBg": "#FCEDDE",
+                "iconColor": "#FB7A01",
+                "title": "طراحی وب‌سایت",
+                "titleColor": "#2F4858",
+                "description": "وب‌سایت‌هایی می‌سازیم که سریع، مدرن و کاربرپسند باشند و حضور دیجیتال شما را تقویت کنند.",
+                "descriptionColor": "#5C6A63"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-1784245542885-gx209",
+          "type": "SectionServicesExperience",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "نمونه‌ای از تجربه‌سازی‌های ما",
+            "titleColor": "#2F4858",
+            "cardBgColor": "#FFFFFF",
+            "shadow": "0px 0px 16px 0px #A6A6A629",
+            "testimonialColorSets": [
+              {
+                "label": "رنگ‌بندی کارت‌های فرد (۱، ۳، ۵ …)",
+                "authorColor": "#5C6A63",
+                "roleColor": "#5C6A63",
+                "firstIconName": "kama",
+                "firstIconColor": "#FB7A01",
+                "secondIconName": "kamaR",
+                "secondIconColor": "#FB7A01",
+                "descriptionColor": "#5C6A63"
+              },
+              {
+                "label": "رنگ‌بندی کارت‌های زوج (۲، ۴ …)",
+                "authorColor": "#5C6A63",
+                "roleColor": "#5C6A63",
+                "firstIconName": "kama",
+                "firstIconColor": "#2ECC71",
+                "secondIconName": "kamaR",
+                "secondIconColor": "#2ECC71",
+                "descriptionColor": "#5C6A63"
+              }
+            ],
+            "cards": [
+              {
+                "id": 1,
+                "badge": {
+                  "iconName": "pen",
+                  "iconColor": "#1EA965",
+                  "iconBg": "#E2F2EA"
+                },
+                "title": {
+                  "text": "پلتفرم آنالیز وب",
+                  "color": "#2F4858"
+                },
+                "logo": "/uploads/1784245636712-yx0wnq.png",
+                "description": {
+                  "text": "این پلتفرم به کاربرها این امکان رو میده که به سادگی و به صورت آنی، داده‌های وب‌سایت خودشون رو آنالیز کنن و عملکرد کلی رو بهبود ببخشند. هدف ما، ارائه ابزارهایی کاربرپسند و جامع برای تحلیل رفتار کاربران هست.",
+                  "color": "#5C6A63"
+                },
+                "imagesBg": "",
+                "images": {
+                  "image1": "/uploads/1784245681206-lra2px.png",
+                  "image2": "/uploads/1784245684067-u3pmfl.png",
+                  "image3": "/uploads/1784245687183-9a70ba.png"
+                },
+                "testimonial": {
+                  "enabled": false,
+                  "cardBackground": "#1EA96505",
+                  "authorName": "",
+                  "roleText": "",
+                  "description": ""
+                }
+              },
+              {
+                "id": 2,
+                "badge": {
+                  "iconName": "pen_line",
+                  "iconColor": "#FB7A01",
+                  "iconBg": "#FCEDDE"
+                },
+                "title": {
+                  "text": "سایت ماکاپ‌های رایگان",
+                  "color": "#2F4858"
+                },
+                "logo": "/uploads/1784246222154-3yx8bg.png",
+                "description": {
+                  "text": "سایتی طراحی کردیم که دسترسی سریع و ساده به مجموعه‌ای از ماکاپ‌های رایگان و باکیفیت رو برای طراحان فراهم می‌کنه.  هدف این محصول، ایجاد یک تجربه روان و بدون دردسر برای پیدا کردن ماکاپ مناسب بود.",
+                  "color": "#5C6A63"
+                },
+                "imagesBg": "#A4A4A414",
+                "images": {
+                  "image1": "/uploads/1784246256883-ak5ghl.png",
+                  "image2": "/uploads/1784246261921-9pg4m1.png",
+                  "image3": "/uploads/1784246265900-deekt3.png"
+                },
+                "testimonial": {
+                  "enabled": true,
+                  "cardBackground": "#1EA96505",
+                  "authorName": "سیما عزیزی",
+                  "roleText": "مدیر محصول",
+                  "description": "کاریار استودیو تیمی دقیق و قابل‌اعتماده. توی هر مرحله از پروژه، مسئله رو درست فهمیدن و برای ما یه مسیر واضح و قابل‌اجرا ساختن ممنونم "
+                }
+              },
+              {
+                "id": 3,
+                "badge": {
+                  "iconName": "pen_line",
+                  "iconColor": "#FB7A01",
+                  "iconBg": "#FCEDDE"
+                },
+                "title": {
+                  "text": "نرم‌افزار مدیریت تسک",
+                  "color": "#2F4858"
+                },
+                "logo": "/uploads/1784246415150-gw9y7m.png",
+                "description": {
+                  "text": "این نرم‌افزار به تیم‌ها کمک می‌کند تا کارهای خود را سازماندهی کنند و وظایف را به راحتی پیگیری کنند. هدف ما، افزایش بهره‌وری و همکاری در بین اعضای تیم است.",
+                  "color": "#5C6A63"
+                },
+                "imagesBg": "#A4A4A414",
+                "images": {
+                  "image1": "/uploads/1784246442778-aqtm42.png",
+                  "image2": "/uploads/1784246445825-8qr1ae.png",
+                  "image3": "/uploads/1784246450955-7537uf.png"
+                },
+                "testimonial": {
+                  "enabled": true,
+                  "cardBackground": "#FB7A0105",
+                  "authorName": "نازنین قاسمی",
+                  "roleText": "مدیر پروژه",
+                  "description": "استفاده از این نرم‌افزار باعث بهبود چشمگیر در روند کاری ما شد و من به شدت آن را توصیه می‌کنم."
+                }
+              },
+              {
+                "id": 4,
+                "badge": {
+                  "iconName": "pen",
+                  "iconColor": "#1EA965",
+                  "iconBg": "#E2F2EA"
+                },
+                "title": {
+                  "text": "پلتفرم آنالیز وب",
+                  "color": "#2F4858"
+                },
+                "logo": "/uploads/1784246560143-6yltd6.png",
+                "description": {
+                  "text": "این پلتفرم به کاربرها این امکان رو میده که به سادگی و به صورت آنی، داده‌های وب‌سایت خودشون رو آنالیز کنن و عملکرد کلی رو بهبود ببخشند. هدف ما، ارائه ابزارهایی کاربرپسند و جامع برای تحلیل رفتار کاربران هست.",
+                  "color": "#5C6A63"
+                },
+                "imagesBg": "#A4A4A414",
+                "images": {
+                  "image1": "/uploads/1784246615265-si3u8w.png",
+                  "image2": "/uploads/1784246622914-gsl5ga.png",
+                  "image3": "/uploads/1784246627990-r6wjdz.png"
+                },
+                "testimonial": {
+                  "enabled": false,
+                  "cardBackground": "",
+                  "authorName": "",
+                  "roleText": "",
+                  "description": ""
+                }
+              },
+              {
+                "id": 5,
+                "badge": {
+                  "iconName": "pen_line",
+                  "iconColor": "#FB7A01",
+                  "iconBg": "#FCEDDE"
+                },
+                "title": {
+                  "text": "نرم‌افزار مدیریت تسک",
+                  "color": "#2F4858"
+                },
+                "logo": "/uploads/1784246683296-tjo49w.png",
+                "description": {
+                  "text": "این نرم‌افزار به تیم‌ها کمک می‌کند تا کارهای خود را سازماندهی کنند و وظایف را به راحتی پیگیری کنند. هدف ما، افزایش بهره‌وری و همکاری در بین اعضای تیم است.",
+                  "color": "#5C6A63"
+                },
+                "imagesBg": "#A4A4A414",
+                "images": {
+                  "image1": "/uploads/1784246704915-qwr36q.png",
+                  "image2": "/uploads/1784246709730-3dwd2p.png",
+                  "image3": "/uploads/1784246714594-jtbyj5.png"
+                },
+                "testimonial": {
+                  "enabled": true,
+                  "cardBackground": "#FB7A0105",
+                  "authorName": "نازنین قاسمی",
+                  "roleText": "مدیر پروژه",
+                  "description": "استفاده از این نرم‌افزار باعث بهبود چشمگیر در روند کاری ما شد و من به شدت آن را توصیه می‌کنم."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-1784289899022-igzs6",
+          "type": "SectionServicesConstruction",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "سفر ساخت یک محصول، از اینجا شروع می‌شود",
+            "subtitle": "با هم از نقطه شناخت شروع می‌کنیم، مسیر را مشخص می‌کنیم و قدم‌به‌قدم به سمت ساخت تجربه نهایی پیش می‌رویم.",
+            "titleColor": "#2F4858",
+            "subtitleColor": "#5C6A63",
+            "cardBgColor": "",
+            "cardTitleColor": "#2F4858",
+            "cardTextColor": "#5C6A63",
+            "cards": [
+              {
+                "id": 1,
+                "number": "1",
+                "numberGradient": "linear-gradient(180deg, rgba(251, 122, 1, 0.16) 42.11%, rgba(253, 253, 253, 0) 83.54%)",
+                "title": "تشکیل تیم",
+                "text": "در ابتدا، با بررسی نیاز پروژه، تیمی متناسب با اهداف شما تشکیل می‌دهیم. متخصصان طراحی، توسعه و مدیریت پروژه در کنار هم قرار می‌گیرند.",
+                "iconName": "people",
+                "iconBg": "#FCEDDE",
+                "iconColor": "#FB7A01"
+              },
+              {
+                "id": 2,
+                "number": "2",
+                "numberGradient": "linear-gradient(180deg, rgba(251, 122, 1, 0.16) 42.11%, rgba(253, 253, 253, 0) 83.54%)",
+                "title": "چرخه‌های هفتگی",
+                "text": "کار در قالب اسپرینت‌های هفتگی پیش می‌رود. در پایان هر چرخه، خروجی‌ها بررسی می‌شوند و بازخوردها برای بهبود مرحله بعد اعمال می‌شوند.",
+                "iconName": "refresh",
+                "iconBg": "#FCEDDE",
+                "iconColor": "#FB7A01"
+              },
+              {
+                "id": 3,
+                "number": "3",
+                "numberGradient": "linear-gradient(180deg, rgba(251, 122, 1, 0.16) 42.11%, rgba(253, 253, 253, 0) 83.54%)",
+                "title": "ادامه مسیر",
+                "text": "پس از رسیدن به نسخه قابل ارائه، مسیر توسعه و بهبود محصول بر اساس داده‌ها و بازخورد کاربران ادامه پیدا می‌کند.",
+                "iconName": "way",
+                "iconBg": "#FCEDDE",
+                "iconColor": "#FB7A01"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-1784247136492-5caps",
+          "type": "SectionQuestions",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "سوالاتی که کمک می‌کنند تصمیم بهتری بگیرید",
+            "titleColor": "#2F4858",
+            "beforeColor": "#E2F2EA",
+            "iconColorUp": "#1EA965",
+            "iconColorDown": "#1EA965",
+            "iconColorBg": "#e2f2ea",
+            "iconUp": "arrow_circle_up",
+            "iconDown": "arrow_circle_down",
+            "Questions": [
+              {
+                "id": 1,
+                "title": "فرایند همکاری با کاریار استودیو چطور شروع می‌شود؟",
+                "text": "بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم.",
+                "titleColor": "#2F4858",
+                "textColor": "#5C6A63"
+              },
+              {
+                "id": 2,
+                "title": "زمان انجام یک پروژه طراحی محصول یا طراحی وب‌سایت چقدر است؟",
+                "text": "زمان انجام یک پروژه طراحی محصول یا طراحی وب‌سایت چقدر است؟",
+                "titleColor": "#2F4858",
+                "textColor": "#5C6A63"
+              },
+              {
+                "id": 3,
+                "title": "برای شروع همکاری چه چیزهایی باید آماده داشته باشم؟",
+                "text": "برای شروع همکاری چه چیزهایی باید آماده داشته باشم؟",
+                "titleColor": "#2F4858",
+                "textColor": "#5C6A63"
+              },
+              {
+                "id": 4,
+                "title": "آیا بعد از تحویل پروژه، پشتیبانی هم دارید؟",
+                "text": "آیا بعد از تحویل پروژه، پشتیبانی هم دارید؟",
+                "titleColor": "#2F4858",
+                "textColor": "#5C6A63"
+              },
+              {
+                "id": 5,
+                "title": "زمان انجام یک پروژه طراحی محصول یا طراحی وب‌سایت چقدر است؟",
+                "text": "زمان انجام یک پروژه طراحی محصول یا طراحی وب‌سایت چقدر است؟",
+                "titleColor": "#2F4858",
+                "textColor": "#5C6A63"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-1784291492925-sudbx",
+          "type": "SectionBaner",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "backgroundImage": "/uploads/1784291525311-e3zn2h.png",
+            "title": "هر محصولی یک نقطه شروع دارد، نقطه شروع شما را می‌سازیم",
+            "titleColor": "#2F4858",
+            "button": {
+              "text": "شروع همکاری",
+              "link": "",
+              "iconName": "arrow_left",
+              "bgColor": "#1EA965",
+              "textColor": "#FFFFFF",
+              "iconColor": "#FFFFFF"
+            }
+          }
+        },
+        {
+          "id": "s-1784291387490-ze8hj",
+          "type": "SectionFooter",
+          "mode": "reference",
+          "refPageId": "home",
+          "refSectionId": "s-1784160148247-gseo7",
+          "data": {
+            "info": {
+              "iconName": "Logo",
+              "title": "کاریار استودیو",
+              "titleColor": "#2F4858",
+              "lineColor": "#E8E8E8",
+              "text": "تمام حقوق محتوای این سایت متعلق به شرکت کاریار استودیو است.",
+              "textColor": "#5C6A63",
+              "link": ""
+            },
+            "socialLinks": [
+              {
+                "label": "واتس اپ",
+                "href": "#",
+                "iconName": "whatsApp",
+                "iconColor": "#157647"
+              },
+              {
+                "label": "اینستاگرام",
+                "href": "#",
+                "iconName": "instagram",
+                "iconColor": "#157647"
+              },
+              {
+                "label": "لینکدین",
+                "href": "#",
+                "iconName": "link",
+                "iconColor": "#157647"
+              }
+            ]
+          },
+          "overrides": {}
+        }
+      ],
+      "enabled": true,
+      "id": "RZHlG9iMHIA",
+      "order": 1
+    },
+    {
+      "name": "درباره ما",
+      "slug": "AboutUs",
+      "sections": [
+        {
+          "id": "s-1784320718512-f563g",
+          "type": "SectionAboutUsSlider",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "از یادگیری تا ساخت محصول واقعی",
+            "description": "کاریار از یک مدرسه شروع شد، جایی که استعدادهای برنامه‌نویسی و طراحی از سراسر کشور شناسایی و برای ورود به دنیای حرفه‌ای آماده می‌شوند. کاریار استودیو ادامه همین مسیر است، جایی که این استعدادها در پروژه‌های واقعی کار می‌کنند، مهارت‌هایشان را به‌کار می‌گیرند و وارد بازار کار می‌شوند.",
+            "titleColor": "#2F4858",
+            "textColor": "#5C6A63",
+            "beforeImage": "/uploads/1784320821527-clqig5.png",
+            "mainImage": "/uploads/1784320802730-gf9ns6.png",
+            "afterImage": "/uploads/1784320829755-ld6ai7.png"
+          }
+        },
+        {
+          "id": "s-1784320919943-w40ou",
+          "type": "SectionAboutUsRecruitment",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "تیم محصول، بدون دغدغه استخدام",
+            "description": "در کاریار استودیو، فارغ‌التحصیلان منتخب کاریار شامل توسعه‌دهندگان و طراحان، زیر نظر مستقیم منتورها و اساتید باتجربه فعالیت می‌کنند. هر تصمیم فنی و هر خروجی، پیش از تحویل بررسی و تایید می‌شود.",
+            "titleColor": "#2F4858",
+            "textColor": "#5C6A63",
+            "Image": "/uploads/1784320940782-rzvf1k.png"
+          }
+        },
+        {
+          "id": "s-1784320952439-cnc4r",
+          "type": "SectionAboutUsValue",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "ارزش‌هایی که در عمل تجربه می‌کنید",
+            "titleColor": "#2F4858",
+            "iconColor": "#E2F2EA",
+            "cardTitleColor": "#5C6A63",
+            "cardDescriptionColor": "#5C6A63",
+            "cardBgColor": "#FFFFFF",
+            "cardShadowColor": "#9191911F",
+            "cardBorderColor": "transparent",
+            "cards": [
+              {
+                "id": 1,
+                "title": "انعطاف‌پذیری کامل (Agile)",
+                "description": "کار به‌صورت هفتگی پیش می‌رود. شما خروجی را می‌بینید، بازخورد می‌دهید و تغییرات اعمال می‌شوند. شما در تمام مراحل ساخت محصول حضور دارید، نه فقط روز اول و آخر."
+              },
+              {
+                "id": 2,
+                "title": "کیفیت تضمین‌شده",
+                "description": "کار توسط جوانان انجام می‌شود، اما استانداردها توسط متخصصان باتجربه بررسی می‌شوند. که به معنی کدنویسی با نظارت دقیق فنی همراه می‌باشد."
+              },
+              {
+                "id": 3,
+                "title": "همکاری شفاف",
+                "description": "مدل قرارداد ما ماهانه است، درست مثل همکاری با تیم داخلی. بدون پیچیدگی قراردادهای پروژه‌ای.  تیم فنی ما در تمام طول مسیر در کنار شما خواهد بود."
+              },
+              {
+                "id": 4,
+                "title": "اثرگذاری اجتماعی",
+                "description": "همکاری با ما فقط یک تصمیم تجاری نیست. با هر پروژه، یک فرصت شغلی واقعی برای یک جوان در هر نقطه از ایران ایجاد می‌شود. پروژه شما، شغل آینده یک نفر است."
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-1784321171780-wyr2m",
+          "type": "SectionAboutUsWay",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "مسیری که برای آینده انتخاب کرده‌ایم",
+            "titleColor": "#2F4858",
+            "description": "هدف ما تبدیل شدن به مرجع تیم‌های محصول چابک است. می‌خواهیم هر استارتاپ یا شرکتی که نیاز به تیم محصول دارد، به‌جای فرآیند طولانی استخدام، سراغ کاریار استودیو بیاید. چشم‌انداز ما ساخت و ارائه تیم‌های آماده‌به‌کار شامل توسعه‌دهنده، طراح و مدیر محصول برای اکوسیستم استارتاپی است.",
+            "descriptionColor": "#5C6A63",
+            "image": "/uploads/1784321189280-57zyw8.png"
+          }
+        },
+        {
+          "id": "s-1784321237068-h1yah",
+          "type": "SectionAboutUsLearn",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "کاریار یاد می‌دهد تا کاریار استودیو بسازد",
+            "titleColor": "#2F4858",
+            "description": "کاریار استودیو برای حل دو مسئله شکل گرفت:\nنیاز کارفرما\nاستخدام تیم فنی حرفه‌ای زمان‌بر و پرهزینه است و برون‌سپاری پروژه‌ای اغلب به نتیجه مطلوب نمی‌رسد.\nنیاز فارغ‌التحصیلان\nنیروهای جوان برای ورود به بازار کار به تجربه واقعی نیاز دارند، اما بدون سابقه فرصت استخدام پیدا نمی‌کنند.\nما این دو مسیر را به هم متصل کردیم. شما با هزینه‌ای منطقی، صاحب یک تیم فنی مدیریت‌شده توسط منتورهای باتجربه می‌شوید و فارغ‌التحصیلان در محیطی امن و حرفه‌ای تجربه واقعی کسب می‌کنند.\nبه زبان ساده: کاریار یاد می‌دهد، و کاریار استودیو بستر عمل و تجربه را فراهم می‌کند.",
+            "descriptionColor": "#5C6A63",
+            "image": "/uploads/1784321245893-0sygwp.png",
+            "iconColor": "#E2F2EA"
+          }
+        },
+        {
+          "id": "s-1784322433476-gv77x",
+          "type": "SectionAboutUsStart",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "جایی که همه‌چیز آغاز شد",
+            "titleColor": "#2F4858",
+            "description": "کاریار استودیو از دل کاریار شکل گرفته است. مسیر آموزشی‌ای که برای آماده‌سازی نیروهای جوان جهت ورود به دنیای حرفه‌ای ایجاد شده است. کاریار، بستر یادگیری و رشد استعدادهاست و کاریار استودیو جایی است که این یادگیری‌ها در پروژه‌های واقعی به اجرا می‌رسند.\nاگر دوست دارید با مسیر آموزشی کاریار بیشتر آشنا شوید، می‌توانید مستقیماً به وب‌سایت کاریار مراجعه کنید.",
+            "descriptionColor": "#5C6A63",
+            "button": {
+              "text": "وب‌سایت کاریار",
+              "link": "https://kaaryar.ir/",
+              "iconName": "arrow",
+              "bgColor": "#1EA965",
+              "textColor": "#FFFFFF",
+              "iconColor": "#FFFFFF"
+            }
+          }
+        },
+        {
+          "id": "s-1784322848692-wggv8",
+          "type": "SectionAboutUsCompanyPeople",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "آدم‌هایی که کاریار استودیو را می‌سازند",
+            "titleColor": "#2F4858",
+            "firstCardColor": "#FCEDDE",
+            "secondCardColor": "#E2F2EA",
+            "nameColor": "#FFFFFF",
+            "roleColor": "#BDBEBF",
+            "cart": [
+              {
+                "memberId": "cFWzXWihuJ0"
+              },
+              {
+                "memberId": "Q4QQVKesHHs"
+              },
+              {
+                "memberId": "St5i7f8g8xs"
+              },
+              {
+                "memberId": "2mLmuk9AmGs"
+              },
+              {
+                "memberId": "7lxp0LTXnWA"
+              },
+              {
+                "memberId": "r5VXH3tOL5k"
+              },
+              {
+                "memberId": "ie0CvKpgv8k"
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-1784325719762-yg0r1",
+          "type": "SectionBaner",
+          "mode": "reference",
+          "refPageId": "home",
+          "refSectionId": "home-8",
+          "data": {
+            "backgroundImage": "",
+            "title": "عنوان جدید",
+            "titleColor": "#2F4858",
+            "button": {
+              "text": "دکمه",
+              "link": "",
+              "iconName": "",
+              "bgColor": "#2DB36C",
+              "textColor": "#FFFFFF",
+              "iconColor": "#FFFFFF"
+            }
+          },
+          "overrides": {
+            "title": "یک پیام فاصله داریم"
+          }
+        },
+        {
+          "id": "s-1784325751131-hnqgf",
+          "type": "SectionFooter",
+          "mode": "reference",
+          "refPageId": "home",
+          "refSectionId": "s-1784160148247-gseo7",
+          "data": {
+            "info": {
+              "iconName": "Logo",
+              "title": "کاریار استودیو",
+              "titleColor": "#2F4858",
+              "lineColor": "#E8E8E8",
+              "text": "تمام حقوق محتوای این سایت متعلق به شرکت کاریار استودیو است.",
+              "textColor": "#5C6A63",
+              "link": ""
+            },
+            "socialLinks": [
+              {
+                "label": "واتس اپ",
+                "href": "#",
+                "iconName": "whatsApp",
+                "iconColor": "#157647"
+              },
+              {
+                "label": "اینستاگرام",
+                "href": "#",
+                "iconName": "instagram",
+                "iconColor": "#157647"
+              },
+              {
+                "label": "لینکدین",
+                "href": "#",
+                "iconName": "link",
+                "iconColor": "#157647"
+              }
+            ]
+          },
+          "overrides": {}
+        }
+      ],
+      "enabled": true,
+      "id": "-hH_g1AL99Q",
+      "order": 2
+    }
+  ],
+  "navbar": {
+    "logoName": "Logo",
+    "title": "کاریار استودیو",
+    "colors": {
+      "title": "#4A5B52",
+      "item": "#5C6A63",
+      "active": "#FB7A01",
+      "hover": "#FB7A01"
+    }
+  },
+  "notFound": {
+    "img": "/uploads/1784326210631-6dkubl.jpg",
+    "title": "صفحه مورد نظر پیدا نشد",
+    "titlrColor": "#ff0080"
+  },
+  "admin": {
+    "username": "admin",
+    "password": "123456",
+    "name": "محمد",
+    "avatar": "/uploads/1784902012425-vv7jwa.jpg",
+    "email": "",
+    "role": "admin"
+  },
+  "teamMembers": [
+    {
+      "name": "آلاله محسنی",
+      "role": "طراح سایت",
+      "image": "",
+      "active": true,
+      "id": "cFWzXWihuJ0"
+    },
+    {
+      "name": "اعظم جعفری",
+      "role": "طراح سایت",
+      "image": "",
+      "active": true,
+      "id": "Q4QQVKesHHs"
+    },
+    {
+      "name": "سامان عباسی",
+      "role": "طراح سایت",
+      "image": "/uploads/1784325462428-ozklgc.png",
+      "active": true,
+      "id": "St5i7f8g8xs"
+    },
+    {
+      "name": "آیدا هاشمی",
+      "role": "طراح سایت",
+      "image": "/uploads/1784325475918-yx32l4.png",
+      "active": true,
+      "id": "2mLmuk9AmGs"
+    },
+    {
+      "name": "کیان شلیله",
+      "role": "مدیر فنی",
+      "image": "/uploads/1784325488457-qokm34.png",
+      "active": true,
+      "id": "7lxp0LTXnWA"
+    },
+    {
+      "name": "فرنوش جمالی",
+      "role": "طراح محصول",
+      "image": "/uploads/1784325502546-3lr4xq.png",
+      "active": true,
+      "id": "r5VXH3tOL5k"
+    },
+    {
+      "name": "مهتاب فرجی",
+      "role": "مدیر پروژه",
+      "image": "/uploads/1784325517549-y1u9ww.png",
+      "active": true,
+      "id": "ie0CvKpgv8k"
+    }
+  ],
+  "iconLibrary": [
+    {
+      "name": "ث",
+      "url": "/uploads/1784362799459-bikfut.svg",
+      "id": "DBcb8XwYxqQ"
+    }
+  ],
+  "pageViews": [
+    {
+      "path": "/",
+      "timestamp": 1784359087035,
+      "id": "kTnKAbSGX54"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784359379378,
+      "id": "RUSCKr_PJkw"
+    },
+    {
+      "path": "/ContactUs",
+      "timestamp": 1784359383786,
+      "id": "UevUiZnZyHA"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784359446800,
+      "id": "bIyt4rpvMpo"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784362039591,
+      "id": "-08pyu_B80g"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784363172249,
+      "id": "jVxv5pMyRuk"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784365654602,
+      "id": "3XCquAxC144"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1784365664978,
+      "id": "T32F0XoOCso"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1784372991134,
+      "id": "8Jkv7C9_uyI"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1784373446960,
+      "id": "y8Z6bXRzI_E"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1784373508370,
+      "id": "-3py7AakQeU"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784379720600,
+      "id": "D9imfjPMCV0"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1784379726130,
+      "id": "i2cyHQo1Y-c"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784900721521,
+      "id": "tZ3fjdyl6OI"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784900722207,
+      "id": "iL74kXQRU6o"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1784900732456,
+      "id": "Qcn3zi40Z7E"
+    },
+    {
+      "path": "/AboutUs",
+      "timestamp": 1784900743801,
+      "id": "Hh65DFPHnWg"
+    },
+    {
+      "path": "/ContactUs",
+      "timestamp": 1784900760849,
+      "id": "hCisU1YC9pA"
+    },
+    {
+      "path": "/ContactUs",
+      "timestamp": 1784901225727,
+      "id": "VFM--miR84o"
+    },
+    {
+      "path": "/ContactUs",
+      "timestamp": 1784901270401,
+      "id": "DNgIg7o7vWc"
+    },
+    {
+      "path": "/ContactUs",
+      "timestamp": 1784901311400,
+      "id": "t0XL57ClsGo"
+    },
+    {
+      "path": "/ContactUs",
+      "timestamp": 1784901351065,
+      "id": "ugGlosE-OJs"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784901570134,
+      "id": "P6HozFAtHPY"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784901812220,
+      "id": "N35Q4nk3_CQ"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784901827204,
+      "id": "8uyiDnofopM"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784901853226,
+      "id": "XUFlDgiTl0E"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1784901869094,
+      "id": "bRfv8IAteq8"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1784902107210,
+      "id": "hbpeZLllzdo"
+    },
+    {
+      "path": "/",
+      "timestamp": 1784902164343,
+      "id": "gO6e8_DmGEE"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1784902625118,
+      "id": "1u77onVqIfU"
+    },
+    {
+      "path": "/AboutUs",
+      "timestamp": 1784902632869,
+      "id": "WxXNkRDvphY"
+    },
+    {
+      "path": "/ContactUs",
+      "timestamp": 1784902637546,
+      "id": "0i-9rqeYQw8"
+    }
+  ],
+  "activeSessions": [
+    {
+      "sessionId": "fd59b2b8-ee32-4e36-9c90-e1a819d7921b",
+      "path": "/Services",
+      "lastSeen": 1784373725680,
+      "id": "hAbedV-HEwg"
+    },
+    {
+      "sessionId": "10836bbc-69bb-45fc-9093-b45296d53281",
+      "path": "/",
+      "lastSeen": 1784359913123,
+      "id": "JNjcpTO0CVg"
+    },
+    {
+      "sessionId": "8f582221-9bad-4166-aaf8-0d52a37a934c",
+      "path": "/",
+      "lastSeen": 1784363395431,
+      "id": "k9PUrp3W9U8"
+    },
+    {
+      "sessionId": "1aefc81b-03a8-4e04-a77e-ba3a3d02b862",
+      "path": "/Services",
+      "lastSeen": 1784373014218,
+      "id": "Lc6azUP3Og4"
+    },
+    {
+      "sessionId": "3ac395bb-46fd-46b4-b293-be91a90a2de3",
+      "path": "/Services",
+      "lastSeen": 1784379790691,
+      "id": "I2nOJ0c5kTc"
+    },
+    {
+      "sessionId": "025d81c1-e326-4845-b701-8e2a6553007f",
+      "path": "/Services",
+      "lastSeen": 1784903456710,
+      "id": "SdxJnvIcKl0"
+    },
+    {
+      "sessionId": "9b2ac8c6-da1b-4ed1-99df-b0781a805db8",
+      "path": "/",
+      "lastSeen": 1784902187499,
+      "id": "r5hh1lHo8SI"
+    },
+    {
+      "sessionId": "cb483117-5180-4fc2-97fc-e8c8fe7f99ea",
+      "path": "/ContactUs",
+      "lastSeen": 1784903467300,
+      "id": "qjAK7-b4q2w"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

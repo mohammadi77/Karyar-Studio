@@ -1,0 +1,120 @@
+/* ============================================
+   استایل‌های پایه (دسکتاپ)
+   ============================================ */
+
+.service-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  justify-self: end;
+}
+/* ---- بخش محتوای متنی ---- */
+.service-card__content {
+  flex: 1;
+  min-width: 0; /* جلوگیری از سرریز در فِلکس */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-card__title {
+  margin: 0;
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: right;
+
+  /* محدودیت یک خط با سه‌نقطه */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.service-card__description {
+  margin: 0;
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+
+  /* محدودیت ۴ خط با سه‌نقطه */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ---- بخش آیکون ---- */
+.service-card__icon-wrapper {
+  width: 120px;
+  height: 120px;
+  min-width: 120px; /* جلوگیری از کوچک‌شدن در فِلکس */
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-card__icon {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+
+/* ============================================
+   موبایل (حداکثر عرض ۷۶۸ پیکسل)
+   ============================================ */
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%; /* عرض کامل در موبایل */
+    flex-direction: row; /* همچنان لوگو در سمت راست */
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .service-card__icon-wrapper {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 88px;
+  }
+
+  .service-card__icon {
+    width: 57px;
+    height: 48px;
+  }
+
+  .service-card__content {
+    flex: 1;
+    min-width: 0;
+    align-items: flex-start; /* محتوا در سمت راست (چپ‌چین برای RTL) */
+  }
+
+  .service-card__title {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-line-clamp: 1;
+  }
+
+  .service-card__description {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    -webkit-line-clamp: 4; /* تعداد خطوط در موبایل یکسان نگه‌داشته شده */
+  }
+  .service-card {
+    width: 100%;
+  }
+}

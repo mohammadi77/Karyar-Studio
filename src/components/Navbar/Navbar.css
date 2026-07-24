@@ -1,0 +1,268 @@
+/* ===== پایه ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  direction: rtl;
+  padding: 0 32px 8px;
+  background-color: #faf9f9;
+  transition: background 0.3s;
+}
+
+.navbar-loading,
+.navbar-error {
+  justify-content: center;
+  font-size: 16px;
+  color: #5c6a63;
+  background: #f8f9fa;
+}
+
+/* ===== برند ===== */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.navbar-title {
+  margin: 0;
+  color: var(--title-color, #2f4858);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  text-align: right;
+}
+
+/* ===== منو ===== */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  position: relative;
+  cursor: pointer;
+  color: var(--item-color, #5c6a63);
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding-bottom: 12px;
+  white-space: nowrap;
+}
+
+.navbar-item:hover {
+  color: var(--hover-color, #2f4858);
+}
+
+.navbar-item.active {
+  color: var(--active-color, #2f4858);
+  font-weight: 500;
+}
+.navbar-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 6px;
+  height: 6px;
+  background: var(--active-color, #2f4858);
+  border-radius: 50%;
+}
+
+/* ===== دکمه همبرگری ===== */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1002;
+}
+.navbar-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--item-color, #5c6a63);
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
+}
+.navbar-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* =====================================================
+   حالت اجباری همبرگری (بیش از ۴ آیتم)
+   ===================================================== */
+.navbar-force-hamburger .navbar-toggle {
+  display: flex;
+}
+
+.navbar-force-hamburger .navbar-menu {
+  position: absolute;
+  top: calc(80px - 5px);
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 12px 12px;
+  padding: 8px 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
+  z-index: 1001;
+}
+.navbar-force-hamburger .navbar-menu.open {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-force-hamburger .navbar-menu li {
+  width: 100%;
+}
+.navbar-force-hamburger .navbar-item {
+  display: block;
+  width: 100%;
+  padding: 14px 32px;
+  text-align: center;
+}
+.navbar-force-hamburger .navbar-item.active::after {
+  display: none;
+}
+.navbar-force-hamburger .navbar-item.active {
+  background: var(--hover-color, #edf2f3);
+}
+
+.navbar-force-hamburger .navbar-overlay {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+/* =====================================================
+   ریسپانسیو (برای حالت عادی - ۴ آیتم یا کمتر)
+   ===================================================== */
+@media (max-width: 768px) {
+  .navbar:not(.navbar-force-hamburger) {
+    height: auto;
+    min-height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 16px 32px; */
+    gap: 20px;
+  }
+  .navbar:not(.navbar-force-hamburger) .navbar-brand {
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar-title {
+    font-size: 18px;
+  }
+  .navbar:not(.navbar-force-hamburger) .navbar-menu {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .navbar:not(.navbar-force-hamburger) .navbar-item {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar:not(.navbar-force-hamburger) {
+    gap: 12px;
+    justify-content: space-between;
+  }
+  .navbar-brand {
+    gap: 10px;
+  }
+  .navbar-logo {
+    width: 24px;
+    height: 24px;
+  }
+  .navbar-title {
+    font-size: 14px;
+  }
+  .navbar-item {
+    font-weight: 400;
+  }
+  .navbar-item.active {
+    font-weight: 500;
+  }
+  .navbar:not(.navbar-force-hamburger) .navbar-menu {
+    gap: 12px;
+    justify-content: space-between;
+  }
+  .navbar:not(.navbar-force-hamburger) .navbar-item {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    white-space: nowrap;
+  }
+  .navbar:not(.navbar-force-hamburger) .navbar-item.active::after {
+    width: 6px;
+    height: 6px;
+  }
+  .navbar-force-hamburger .navbar-menu {
+    top: 59px;
+  }
+  .navbar-force-hamburger .navbar-item {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar:not(.navbar-force-hamburger) .navbar-menu {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .navbar:not(.navbar-force-hamburger) .navbar-item {
+    font-size: 13px;
+    padding-bottom: 6px;
+  }
+}

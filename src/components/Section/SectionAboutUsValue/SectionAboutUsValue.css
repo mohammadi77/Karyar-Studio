@@ -1,0 +1,71 @@
+.section-about-us-value {
+  width: 100%;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+.div-value {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 24px;
+  text-align: right;
+}
+
+.title h2 {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  margin: 0;
+}
+
+/* ===== دسکتاپ: گرید ۲ ستونه (۲x۲) ===== */
+.value-waper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.value-waper > .cart9 {
+  position: relative;
+  z-index: 1;
+}
+
+/* دایره تزئینی که دقیقاً وسط ۴ کارت قرار می‌گیرد و از لای فاصله‌ها دیده می‌شود */
+.value-icon {
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  width: 201px;
+  height: 201px;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ===== موبایل: تک ستونه و کارت‌ها Fill عرض ===== */
+@media (max-width: 768px) {
+  .section-about-us-value {
+    padding: 32px 16px;
+  }
+
+  .value-waper {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .title h2 {
+    font-size: 20px;
+  }
+
+  /* در حالت تک‌ستونه نقطه تقاطعی وجود ندارد، پس دایره مخفی می‌شود */
+  .value-icon {
+    display: none;
+  }
+}

@@ -1,0 +1,162 @@
+/* ===== کارت اصلی ===== */
+.Card11 {
+  position: relative; /* لنگر برای آیکون که با position:absolute در گوشه کارت قرار می‌گیرد */
+  width: 314px;
+  padding: 8px 0 24px 24px; /* بدون padding سمت راست تا عنوان/متن به لبه راست کارت بچسبند؛ padding بالا کم است تا عدد به بالای کارت نزدیک‌تر باشد */
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Vazir FD-WOL", sans-serif;
+  direction: rtl; /* راست‌چین برای فارسی */
+  transition: all 0.3s ease;
+  /* رنگ‌ها از طریق props یا inline-style اعمال می‌شوند */
+}
+
+/* ===== ردیف بالا (عدد) ===== */
+/* ارتفاع این ردیف عمداً برابر ارتفاع آیکون است، نه عدد؛ چون عدد با فونت
+   خیلی بزرگ‌تر است و اگر ارتفاعش ملاک قرار بگیرد فاصله عنوان تا آیکون زیاد می‌شود */
+.Card11-top-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end; /* عدد سمت چپ قرار می‌گیرد (flex-end در rtl) */
+  width: 100%;
+  height: 56px;
+  overflow: visible;
+}
+
+/* ===== محفظه آیکون: گوشه راست و بالای کارت ===== */
+.Card11-icon-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 64px;
+  border-top-right-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  background-color: #f0f4ff; /* پیش‌فرض */
+  transition: background-color 0.3s ease;
+}
+
+/* ===== خود آیکون ===== */
+.Card11-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #3b82f6; /* پیش‌فرض */
+  transition: color 0.3s ease;
+}
+.Card11-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ===== عدد ===== */
+.Card11-number {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 1; /* بدون این، فاصله خط باعث می‌شود عدد از بالای ردیف فاصله بگیرد */
+  text-align: center;
+  letter-spacing: 0%;
+  color: #1e293b; /* پیش‌فرض */
+  transition: color 0.3s ease;
+  font-feature-settings: "tnum";
+}
+
+/* ===== عنوان ===== */
+.Card11-title {
+  font-weight: 500;
+  font-size: 22px;
+
+  text-align: right;
+  letter-spacing: 0%;
+  color: #0f172a; /* پیش‌فرض */
+  transition: color 0.3s ease;
+}
+
+/* ===== متن ===== */
+.Card11-text {
+  font-weight: 400;
+  font-size: 16px;
+
+  text-align: right;
+  letter-spacing: 0%;
+  color: #475569; /* پیش‌فرض */
+  transition: color 0.3s ease;
+}
+
+/* ============================================
+   موبایل (عرض ۱۰۰٪)
+   ============================================ */
+@media (max-width: 768px) {
+  .Card11 {
+    width: 100%;
+    padding: 8px 0 20px 18px;
+    gap: 10px;
+  }
+  .Card11-top-row {
+    height: 40px;
+  }
+  .Card11-icon-container {
+    width: 48px;
+    height: 40px;
+    border-top-right-radius: 16px;
+    padding: 8px;
+    gap: 8px;
+  }
+  .Card11-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .Card11-number {
+    font-size: 71px;
+  }
+  .Card11-title {
+    font-size: 16px;
+  }
+  .Card11-text {
+    font-size: 14px;
+  }
+}
+
+/* ============================================
+   بسیار کوچک (اختیاری)
+   ============================================ */
+@media (max-width: 400px) {
+  .Card11 {
+    padding: 6px 0 16px 14px;
+    gap: 10px;
+  }
+  .Card11-top-row {
+    height: 34px;
+  }
+  .Card11-icon-container {
+    width: 40px;
+    height: 34px;
+    border-top-right-radius: 12px;
+    padding: 6px;
+  }
+  .Card11-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .Card11-number {
+    font-size: 56px;
+  }
+  .Card11-title {
+    font-size: 14px;
+  }
+  .Card11-text {
+    font-size: 12px;
+  }
+}

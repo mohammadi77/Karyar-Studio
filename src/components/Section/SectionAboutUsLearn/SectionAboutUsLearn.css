@@ -1,0 +1,123 @@
+.section-about-us-learn {
+  width: 100%;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+.learn {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse; /* متن راست، عکس/دایو رنگ چپ */
+  align-items: flex-start;
+  gap: 48px;
+}
+
+/* ===== عکس + دایو رنگ (دسکتاپ) ===== */
+.learn-media {
+  position: relative;
+  flex-shrink: 0;
+  width: 481px;
+  height: 276px;
+}
+
+.learn-media-color {
+  position: absolute;
+  width: 232px;
+  height: 193px;
+  right: -40px;
+  top: 0;
+  z-index: 0;
+}
+
+.learn-media-image {
+  position: relative;
+  width: 481px;
+  height: 276px;
+  border-top-right-radius: 150px;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+/* ===== متن (دسکتاپ) ===== */
+.learn-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.learn-title {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  margin: 0;
+}
+
+.learn-description {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: right;
+  margin: 0;
+}
+
+/* ===== موبایل: عکس/دایو رنگ بالا -> تایتل -> متن ===== */
+@media (max-width: 850px) {
+  .section-about-us-learn {
+    padding: 32px 16px;
+  }
+
+  .learn {
+    flex-direction: column;
+    align-items: center; /* وسط‌چین کردن learn-media */
+    gap: 16px;
+  }
+
+  /* عرض بلوک دقیقاً برابر عرض عکس + margin auto برای وسط‌چین شدن کل مجموعه (عکس + دایو رنگ) */
+  .learn-media {
+    position: relative;
+    width: 343px;
+    max-width: 100%;
+    height: 198px;
+    margin: 0 auto;
+  }
+
+  /* چون مبدأ (۰,۰) الان گوشه‌ی خود عکسه، آفست‌ها نسبت به فاصله‌ی اصلی عکس و دایو رنگ محاسبه شده‌اند */
+  .learn-media-color {
+    width: 136px;
+    height: 114px;
+    top: 100px; /* 116px - 16px */
+    left: -16px; /* 16px - 32px */
+    right: auto;
+    bottom: auto;
+  }
+
+  .learn-media-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 198px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 100px;
+  }
+
+  .learn-title {
+    font-size: 18px;
+    text-align: right;
+  }
+
+  .learn-description {
+    font-size: 14px;
+    text-align: right;
+  }
+}

@@ -1,0 +1,191 @@
+/* ============================================
+   ریست و پایه (دسکتاپ)
+   ============================================ */
+.section-about-us-slider {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  direction: rtl;
+  padding: 48px 24px;
+  box-sizing: border-box;
+}
+
+.slider-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ============================================
+   هر اسلاید
+   ============================================ */
+.slide {
+  display: flex;
+  flex-direction: row; /* در RTL، اولین چایلد (text-wrapper) خودش می‌رود سمت راست */
+  align-items: center;
+  gap: 40px;
+}
+
+/* ============================================
+   بخش متن
+   ============================================ */
+.text-wrapper {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #2f4858;
+  margin: 0;
+}
+
+.description {
+  font-family: "Vazir FD-WOL", "Vazir", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #3d5a6b;
+  white-space: pre-wrap; /* نمایش خطوط جدید \n */
+  margin: 0;
+}
+
+/* ============================================
+   بخش تصاویر
+   ============================================ */
+.image-wrapper-back {
+  flex-shrink: 0;
+  width: 390px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  width: 390px;
+  height: 366px;
+  position: relative;
+}
+
+.main-image {
+  position: absolute;
+  width: 338.31px;
+  height: 338.31px;
+  top: 35.69px;
+  left: 45.46px;
+  object-fit: cover;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  box-shadow: 0px 0px 20px 0px #91919140;
+  display: block;
+  background: #e8edf0;
+  z-index: 3;
+}
+
+/* الگوی نقطه‌ای که از پشت، بالا-راست عکس اصلی بیرون می‌زند */
+.before-image {
+  position: absolute;
+  width: 209.18px;
+  height: 146.4px;
+  top: 8px;
+  left: 220.82px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* دایره نارنجی که از پشت، پایین-چپ عکس اصلی بیرون می‌زند */
+.after-image {
+  position: absolute;
+  width: 98.39px;
+  height: 92.33px;
+  top: 281.67px;
+  left: 40px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* ============================================================
+   ============  همه مدیا کوئری‌ها در یکجا  ===================
+   ============================================================ */
+
+/* ===== صفحه‌های بین ۷۶۹ تا ۹۲۷ پیکسل (تبلت کوچک) ===== */
+@media (max-width: 927px) {
+  .title {
+    font-size: 22px;
+  }
+  .description {
+    font-size: 14px;
+  }
+}
+
+/* ===== صفحه‌های موبایل (حداکثر ۷۶۸ پیکسل) ===== */
+@media (max-width: 768px) {
+  .section-about-us-slider {
+    padding: 24px 16px;
+  }
+
+  /* عکس‌ها بالا، بعد تایتل، بعد متن (column-reverse چون image-wrapper-back آخرین چایلده) */
+  .slide {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .image-wrapper-back {
+    width: 100%;
+  }
+
+  .image-wrapper {
+    width: 350.25px; /* 179.3 + 120.95 (لبه‌ی راست before-image، که از main-image هم جلوتره) */
+    height: 241.5px; /* 39.57 + 201.925 */
+    margin: 0 auto;
+  }
+
+  .main-image {
+    width: 201.93px;
+    height: 201.93px;
+    top: 39.57px;
+    left: 74.75px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+  }
+
+  .before-image {
+    width: 120.95px;
+    height: 90.2px;
+    top: 16px;
+    left: 179.3px;
+  }
+
+  .after-image {
+    width: 56.89px;
+    height: 56.89px;
+    top: 184.61px;
+    left: 74.75px;
+  }
+
+  .text-wrapper {
+    width: 100%;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 14px;
+    text-align: right;
+  }
+}

@@ -1,0 +1,51 @@
+.image-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.image-field-preview {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px dashed #dcdfe3;
+  background: #fafafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.image-field-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-field-empty {
+  font-size: 9px;
+  color: #9ba1a8;
+  text-align: center;
+}
+
+.image-field-controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.image-field-upload {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px dashed #1ea965;
+  color: #1ea965;
+  font-size: 12px;
+  cursor: pointer;
+}
+.image-field-upload.disabled {
+  opacity: 0.6;
+  cursor: default;
+}

@@ -1,0 +1,90 @@
+/* استایل پایه */
+.section-about-us-recruitment {
+  direction: rtl; /* راست‌چین */
+}
+
+.recruitment {
+  display: flex;
+  flex-direction: row; /* دسکتاپ: عکس راست، متن چپ */
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+/* سمت چپ (متن) */
+.recruitment-wrapper {
+  flex: 1;
+  text-align: right;
+  padding-left: 110px;
+  padding-top: 61px;
+}
+
+.recruitment-wrapper h2 {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.recruitment-wrapper p {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8; /* برای خوانایی بهتر با خطوط جدید */
+  letter-spacing: 0%;
+  text-align: right;
+  white-space: pre-line; /* حفظ خطوط جدید */
+}
+
+/* سمت راست (عکس) */
+.recruitment-img {
+  flex-shrink: 0;
+  height: 243.99998474121116px;
+  width: 351.0000000000003px;
+  border-top-left-radius: 72px;
+  overflow: hidden;
+}
+
+.recruitment-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== واکنش‌گرایی موبایل ===== */
+@media (max-width: 768px) {
+  .recruitment {
+    flex-direction: column; /* عکس بالا، متن پایین */
+    gap: 20px;
+  }
+
+  /* عکس در موبایل */
+  .recruitment-img {
+    width: 100%;
+    height: 245px;
+    order: 1;
+  }
+
+  /* عنوان در موبایل */
+  .recruitment-wrapper h2 {
+    font-size: 18px;
+  }
+
+  /* متن در موبایل */
+  .recruitment-wrapper p {
+    font-size: 14px;
+    text-align: right;
+  }
+
+  /* ترتیب نمایش: عکس اول، متن دوم */
+  .recruitment-wrapper {
+    order: 2;
+    padding: 0 20px;
+    gap: 12px;
+  }
+}

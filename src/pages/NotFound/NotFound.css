@@ -1,0 +1,37 @@
+.UndefinedWrapper {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Undefined {
+  background: var(--FFFFFF-color);
+  border-radius: 16px;
+  padding: 36px 24px;
+  gap: 24px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Undefined > img {
+  width: 400px;
+  height: 285px;
+}
+.Undefined > p {
+  font-family: Vazirmatn;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .Undefined > img {
+    width: 320px;
+    height: 245px;
+  }
+}

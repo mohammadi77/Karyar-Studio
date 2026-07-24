@@ -1,0 +1,51 @@
+.editor-back-link {
+  font-size: 13px;
+  color: #5c6a63;
+  text-decoration: none;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.editor-save-btn {
+  height: 44px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 10px;
+  background: #1ea965;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.editor-save-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.resource-editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.resource-editor-header h1 {
+  font-size: 20px;
+  color: #2f4858;
+}
+
+.resource-editor-body {
+  background: #ffffff;
+  border: 1px solid #edf2f3;
+  border-radius: 14px;
+  padding: 16px;
+  max-width: 720px;
+}
+
+@media (max-width: 640px) {
+  .resource-editor-body {
+    padding: 12px;
+  }
+}

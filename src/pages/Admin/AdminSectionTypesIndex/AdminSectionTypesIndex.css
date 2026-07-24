@@ -1,0 +1,8 @@
+.section-type-card-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.section-type-card-link:hover {
+  border-color: #1ea965;
+}

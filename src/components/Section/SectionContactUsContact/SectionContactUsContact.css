@@ -1,0 +1,178 @@
+.section-contact-us-contact {
+  width: 100%;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+.contact {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row; /* در RTL اولین چایلد (contact-media) خودش می‌رود سمت راست */
+  align-items: center;
+  gap: 48px;
+}
+
+/* ============================================
+   عکس + دایو رنگ (دسکتاپ)
+   ============================================ */
+.contact-media {
+  position: relative;
+  flex-shrink: 0;
+  width: 431px;
+  height: 295px;
+}
+
+.contact-media-before {
+  position: absolute;
+  width: 119px;
+  height: 115px;
+  border-bottom-right-radius: 62px;
+  right: -30px;
+  bottom: -25px;
+  z-index: 0;
+}
+
+.contact-media-image {
+  position: relative;
+  width: 431px;
+  height: 295px;
+  border-top-left-radius: 120px;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+/* ============================================
+   متن و راه‌های ارتباطی
+   ============================================ */
+.contact-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-title {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0%;
+  text-align: right;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-icon-circle {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-text {
+  margin: 0;
+}
+
+.contact-phone,
+.contact-address {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0%;
+}
+
+.contact-email {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0%;
+}
+
+/* ===== موبایل ===== */
+@media (max-width: 768px) {
+  .section-contact-us-contact {
+    padding: 32px 16px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-media {
+    width: 294px;
+    height: 201px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-media-before {
+    width: 108px;
+    height: 108px;
+    border-bottom-right-radius: 62px;
+    right: -20px;
+    bottom: -18px;
+  }
+
+  .contact-media-image {
+    width: 294px;
+    height: 201px;
+    max-width: 100%;
+    border-top-left-radius: 64px;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    gap: 14px;
+  }
+
+  .contact-title {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 32px;
+  }
+
+  .contact-icon-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+  }
+
+  .contact-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-phone,
+  .contact-address {
+    font-size: 14px;
+  }
+
+  .contact-email {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .contact-address {
+    text-align: right;
+  }
+}

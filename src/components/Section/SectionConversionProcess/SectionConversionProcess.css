@@ -1,0 +1,111 @@
+.conversion-process {
+  padding: 64px 15px;
+}
+
+.conversion-process__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.conversion-process__title {
+  font-family: "Vazir FD-WOL";
+  font-weight: 700;
+  font-size: 26px;
+  text-align: right;
+}
+
+.conversion-process__subtitle {
+  font-family: "Vazir FD-WOL";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+}
+
+/* This wrapper is the positioning context for the decorative lines.
+   Their top/left in the JSON are relative to THIS box, not the page -
+   the raw Figma coordinates you sent were absolute page coordinates,
+   so they need to be re-measured relative to this container and updated
+   in conversionProcess.json (lines.desktop[].top/left, lines.mobile[].top/left). */
+.conversion-process__body {
+  position: relative;
+  margin-top: 40px;
+  overflow: hidden;
+  /* طرح فیگما دقیقاً روی عرض ۱۲۸۰px چیده شده؛ چون `.conversion-process` خودش
+     ۱۵px پدینگ هر طرف داره، با margin منفی از اون پدینگ فرار می‌کنیم تا این
+     عرض ۱۲۸۰ px واقعاً در اختیار خط‌های تزئینی (که موقعیت‌شون px مطلقه) باشه */
+  margin-inline: -15px;
+  width: calc(100% + 30px);
+  max-width: 1280px;
+}
+
+.conversion-process__lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* عرض کارت‌ها و گپ‌های بین‌شون دقیقاً مطابق طرح فیگما: هر گپ برابر با عرض
+   همون قطعه خط تزئینی‌ایه که باید توش دیده بشه (نه پشت کارت‌ها قایم بشه).
+   ستون‌های ۱ و ۷ فضای خالی برای دو خط تزئینی انتهایی (راست و چپ) هستن. */
+.conversion-process__cards {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 80.13px 271.37px 92.29px 337.98px 100.67px 317.43px 80.13px;
+  align-items: start;
+  padding-bottom: 48px; /* هم‌سطح با margin-top کارت‌های کناری، تا overflow:hidden پدر چیزی رو قیچی نکنه */
+}
+
+.conversion-process__cards > *:nth-child(1) {
+  grid-column: 2;
+  margin-top: 48px;
+}
+.conversion-process__cards > *:nth-child(2) {
+  grid-column: 4;
+}
+.conversion-process__cards > *:nth-child(3) {
+  grid-column: 6;
+  margin-top: 48px;
+}
+
+/* Show desktop lines, hide mobile lines by default */
+.conversion-process__lines--mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .conversion-process__title {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 32px;
+  }
+
+  .conversion-process__subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .conversion-process__cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-bottom: 0;
+  }
+
+  .conversion-process__cards > *:nth-child(1),
+  .conversion-process__cards > *:nth-child(2),
+  .conversion-process__cards > *:nth-child(3) {
+    grid-column: auto;
+    margin-top: 0;
+  }
+
+  /* Swap the two static line sets at the mobile breakpoint */
+  .conversion-process__lines--desktop {
+    display: none;
+  }
+
+  .conversion-process__lines--mobile {
+    display: block;
+  }
+}

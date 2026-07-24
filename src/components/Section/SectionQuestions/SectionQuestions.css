@@ -1,0 +1,155 @@
+/* SectionQuestions.css */
+
+/* ===== بخش اصلی ===== */
+.section-questions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== کانتینر با گرید ===== */
+.questions-container {
+  display: grid;
+  grid-template-columns: 27% 1fr;
+  gap: 2rem;
+  width: 100%;
+  align-items: start;
+}
+
+/* ===== عنوان ===== */
+.title-wrapper {
+  padding-top: 1rem;
+  padding-right: 32px;
+}
+
+.section-questions .title {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: right;
+  margin: 0;
+}
+
+/* ===== بخش لیست سوالات ===== */
+.list-wrapper {
+  position: relative;
+  padding: 1rem 0;
+  /* ارتفاع به محتوای داخل وابسته است (auto) */
+}
+
+/* ===== پس‌زمینه (داینامیک با max-height) ===== */
+.list-background {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  height: calc(100% - 40px); /* از بالای wrapper تا پایین */
+  max-height: 417px; /* حداکثر ارتفاع در دسکتاپ */
+  border-top-right-radius: 161px;
+  z-index: 0;
+  pointer-events: none;
+  transition: height 0.3s ease; /* انیمیشن نرم برای تغییر ارتفاع */
+}
+
+/* ===== لیست آیتم‌ها ===== */
+.list-items {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 90%;
+  margin-right: auto;
+  padding-left: 32px;
+}
+
+/* ===== حالت‌های لود و خطا ===== */
+.loading-text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.error-wrapper {
+  text-align: center;
+}
+
+.error-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #dc2626;
+}
+
+.error-message {
+  color: #475569;
+}
+
+/* ============================================ */
+/* ===== واکنش‌گرایی (موبایل و تبلت) ===== */
+/* ============================================ */
+
+/* تبلت و موبایل بزرگ */
+@media (max-width: 780px) {
+  .questions-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .title-wrapper {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .list-background {
+    max-height: 350px; /* حداکثر ارتفاع در تبلت */
+    width: 94%;
+  }
+
+  .list-items {
+    width: 90%;
+    padding-right: 8px;
+    padding-left: 12px;
+  }
+  .list-background {
+    left: 0;
+    right: auto;
+  }
+  .section-questions .title {
+    font-size: 18px;
+    padding: 0 32px;
+    text-align: center;
+  }
+}
+
+/* موبایل کوچک */
+/* @media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .list-background {
+    max-height: 317px; /* حداکثر ارتفاع در موبایل */
+/* border-top-right-radius: 60px;
+  }
+
+  .list-items {
+    width: 94%;
+    padding-right: 6px;
+    gap: 0.5rem;
+  }
+} */
+@media (max-width: 1150px) {
+  .title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 900px) {
+  .title {
+    font-size: 20px;
+  }
+}

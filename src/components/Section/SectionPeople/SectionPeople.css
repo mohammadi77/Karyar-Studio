@@ -1,0 +1,76 @@
+.SectionPeople {
+  width: 100%;
+  padding: 80px 15px;
+  background-color: transparent;
+}
+
+.DivPeople {
+  margin: auto;
+}
+.SectionPeopleTitle {
+  color: var(--Text-Title, #2f4858);
+  text-align: center;
+  font-family: "Vazir FD-WOL";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.SectionPeopleText {
+  color: var(--Text-Subtitle, #5c6a63);
+  text-align: center;
+  font-family: "Vazir FD-WOL";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+.SectionPeople .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+}
+.SectionPeople .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #ededed;
+  opacity: 1;
+  transition: 0.3s;
+}
+.SectionPeople .swiper-pagination-bullet-active {
+  width: 16px;
+  height: 16px;
+  background: #fb7a01;
+}
+@media (max-width: 768px) {
+  .SectionPeople {
+    padding: 56px 0;
+  }
+
+  .SectionPeopleTitle {
+    font-size: 18px;
+    padding: 0 32px;
+  }
+
+  .SectionPeopleText {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .SectionPeople .swiper-pagination {
+    margin-top: 28px;
+  }
+
+  .SectionPeople .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .SectionPeople .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+  }
+  .SectionPeople .swiper-wrapper {
+    margin-right: 109px !important;
+  }
+}

@@ -1,0 +1,80 @@
+section-servis-construction {
+  width: 100%;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  direction: rtl;
+}
+
+.construction {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.construction-title {
+  font-family: Vazir FD-WOL;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 26px;
+  leading-trim: NONE;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.section-servis-construction .construction-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+/* ============================================
+   Card7
+   ============================================ */
+.card11 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* راست‌چین در RTL */
+  gap: 12px;
+}
+.construction-subtitle {
+  font-family: Vazir FD-WOL;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+/* ===== موبایل ===== */
+@media (max-width: 768px) {
+  .section-contact-us-construction {
+    padding: 32px 16px;
+  }
+  .construction-subtitle {
+    font-size: 14px;
+  }
+
+  .construction {
+    gap: 28px;
+  }
+
+  .construction-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .section-servis-construction .construction-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 9px;
+  }
+
+  .card7-title {
+    font-size: 18px;
+  }
+
+  .card7-text {
+    font-size: 14px;
+  }
+}

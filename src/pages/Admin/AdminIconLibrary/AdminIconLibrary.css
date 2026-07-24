@@ -1,0 +1,79 @@
+.icon-library-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.icon-library-upload-btn.disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.icon-library-pending-preview {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  background: #f2f4f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.icon-library-pending-preview img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.icon-library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 14px;
+}
+
+.icon-library-card {
+  background: #ffffff;
+  border: 1px solid #edf2f3;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.icon-library-card-preview {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #f2f4f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-library-card-preview img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.icon-library-card-name {
+  font-size: 12px;
+  color: #5c6a63;
+  direction: ltr;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.icon-library-card .admin-page-delete-btn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 26px;
+  height: 26px;
+  font-size: 13px;
+}

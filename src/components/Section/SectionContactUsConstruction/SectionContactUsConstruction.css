@@ -1,0 +1,138 @@
+.section-contact-us-construction {
+  width: 100%;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+.construction {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.construction-title {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
+}
+
+/* ===== ردیف کارت‌ها: دسکتاپ کنار هم، موبایل زیر هم ===== */
+.construction-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+/* ============================================
+   Card7
+   ============================================ */
+.card7 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* راست‌چین در RTL */
+  gap: 12px;
+}
+
+.card7-top-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card7-number {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card7-icon-box {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card7-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.card7-title {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: right;
+  margin: 0;
+}
+
+.card7-text {
+  font-family: "Vazir FD-WOL", "Vazir", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  text-align: right;
+  margin: 0;
+}
+
+/* ===== موبایل ===== */
+@media (max-width: 768px) {
+  .section-contact-us-construction {
+    padding: 32px 16px;
+  }
+
+  .construction {
+    gap: 28px;
+  }
+
+  .construction-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .construction-cards {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .card7-number {
+    font-size: 56px;
+  }
+
+  .card7-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .card7-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .card7-title {
+    font-size: 18px;
+  }
+
+  .card7-text {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,11 @@
+.decorative-line {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.decorative-line--capsule {
+  box-sizing: border-box;
+  background: transparent;
+  border-style: solid;
+}

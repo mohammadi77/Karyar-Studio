@@ -1,0 +1,60 @@
+.section-source-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.section-source-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px dashed #dcdfe3;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.section-source-mode-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #2f4858;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.section-source-empty {
+  font-size: 13px;
+  color: #9ba1a8;
+}
+
+.section-source-overrides {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px dashed #dcdfe3;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.section-source-overrides-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2f4858;
+}
+
+.section-source-overrides-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.section-source-team-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px dashed #dcdfe3;
+  border-radius: 10px;
+  padding: 12px;
+}

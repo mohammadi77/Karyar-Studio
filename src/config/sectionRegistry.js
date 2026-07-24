@@ -1,0 +1,536 @@
+import SectionSlider from "../components/Section/SectionSlider/SectionSlider";
+import SectionLogos from "../components/Section/SectionLogos/SectionLogos";
+import SectionServices from "../components/Section/SectionServices/SectionServices";
+import SectionProject from "../components/Section/SectionProject/SectionProject";
+import SectionConversionProcess from "../components/Section/SectionConversionProcess/SectionConversionProcess";
+import SectionPeople from "../components/Section/SectionPeople/SectionPeople";
+import SectionExperience from "../components/Section/SectionExperience/SectionExperience";
+import SectionBaner from "../components/Section/SectionBaner/SectionBaner";
+import SectionServicesSlider from "../components/Section/SectionServicesSlider/SectionServicesSlider";
+import SectionServicesExperience from "../components/Section/SectionServicesExperience/SectionServicesExperience";
+import SectionServicesConstruction from "../components/Section/SectionServicesConstruction/SectionServicesConstruction";
+import SectionQuestions from "../components/Section/SectionQuestions/SectionQuestions";
+import SectionAboutUsSlider from "../components/Section/SectionAboutUsSlider/SectionAboutUsSlider";
+import SectionAboutUsRecruitment from "../components/Section/SectionAboutUsRecruitment/SectionAboutUsRecruitment";
+import SectionAboutUsValue from "../components/Section/SectionAboutUsValue/SectionAboutUsValue";
+import SectionAboutUsWay from "../components/Section/SectionAboutUsWay/SectionAboutUsWay";
+import SectionAboutUsLearn from "../components/Section/SectionAboutUsLearn/SectionAboutUsLearn";
+import SectionAboutUsStart from "../components/Section/SectionAboutUsStart/SectionAboutUsStart";
+import SectionAboutUsCompanyPeople from "../components/Section/SectionAboutUsCompanyPeople/SectionAboutUsCompanyPeople";
+import SectionContactUsContact from "../components/Section/SectionContactUsContact/SectionContactUsContact";
+import SectionContactUsConstruction from "../components/Section/SectionContactUsConstruction/SectionContactUsConstruction";
+import SectionFooter from "../components/Section/SectionFooter/SectionFooter";
+
+const colors = {
+  title: "#2F4858",
+  text: "#5C6A63",
+};
+
+export const sectionRegistry = {
+  SectionSlider: {
+    label: "اسلایدر معرفی",
+    Component: SectionSlider,
+    defaultData: {
+      title: "عنوان جدید",
+      description: "توضیحات این بخش را وارد کنید",
+      image: "",
+      titleColor: colors.title,
+      textColor: colors.text,
+      bgShapeColor: "#FCEDDE",
+      button: {
+        text: "دکمه",
+        link: "/",
+        iconName: "",
+        bgColor: "#FB7A01",
+        textColor: "#FFFFFF",
+        iconColor: "#FFFFFF",
+      },
+    },
+  },
+  SectionLogos: {
+    label: "اسلایدر لوگوها",
+    Component: SectionLogos,
+    defaultData: [{ id: 1, title: "", image: "", link: "" }],
+  },
+  SectionServices: {
+    label: "خدمات (کارت‌ها)",
+    Component: SectionServices,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      cardTitleColor: colors.title,
+      cardDescriptionColor: colors.text,
+      cardShadowColor: "#FB7A0129",
+      cardBgColor: "#FFFFFF",
+      button: {
+        text: "خدمات ما",
+        link: "",
+        iconName: "",
+        bgColor: "#1EA965",
+        textColor: "#FFFFFF",
+        iconColor: "#FFFFFF",
+      },
+      services: [
+        {
+          id: 1,
+          icon: "",
+          title: "",
+          description: "",
+          iconBgColor: "#E2F2EA",
+          iconColor: "#1EA965",
+          shadowColor: "#FB7A0129",
+        },
+      ],
+    },
+  },
+  SectionProject: {
+    label: "اسلایدر پروژه‌ها",
+    Component: SectionProject,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      cardTitleColor: colors.title,
+      textColor: colors.text,
+      iconColor: "#1EA965",
+      navBgColor: "#F6F6F6",
+      dotColor: "#EDEDED",
+      activeDotColor: "#1EA965",
+      cardBgColor: "#FFFFFF",
+      beforeImage: "",
+      afterImage: "",
+      ArrowLeft: "arrow_circle_left",
+      ArrowRight: "arrow_circle_right",
+      projects: [{ id: 1, image: "", logo: "", title: "", paragraph: "" }],
+    },
+  },
+  SectionConversionProcess: {
+    label: "روند تبدیل ایده به محصول",
+    Component: SectionConversionProcess,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      subtitle: "",
+      subtitleColor: colors.text,
+      button: {
+        text: "دکمه",
+        link: "",
+        iconName: "",
+        bgColor: "#2DB36C",
+        textColor: "#FFFFFF",
+        iconColor: "#FFFFFF",
+      },
+      lines: {
+        color: "#FB7A01",
+        opacity: 0.16,
+        shadowColor: "rgba(90, 44, 1, 0.12)",
+        desktop: [
+          {
+            id: "d1",
+            shape: "hook",
+            width: 80.13,
+            height: 151,
+            rotate: -180,
+            top: 28,
+            left: 1199.87,
+            opacity: 1,
+          },
+          {
+            id: "d2",
+            shape: "capsule",
+            borderRadius: 40,
+            borderWidth: 6,
+            width: 92.46,
+            height: 163,
+            rotate: 0,
+            top: 52,
+            left: 836.21,
+            opacity: 1,
+          },
+          {
+            id: "d3",
+            shape: "capsule",
+            borderRadius: 40,
+            borderWidth: 6,
+            width: 100.67,
+            height: 152,
+            rotate: -180,
+            top: 24,
+            left: 397.56,
+            opacity: 1,
+          },
+          {
+            id: "d4",
+            shape: "capsule",
+            borderRadius: 40,
+            borderWidth: 6,
+            width: 80.13,
+            height: 130,
+            rotate: -180,
+            top: 87,
+            left: 0,
+            opacity: 1,
+          },
+        ],
+        mobile: [],
+      },
+      cards: [
+        {
+          id: 1,
+          number: "01",
+          title: "",
+          text: "",
+          iconName: "",
+          iconBg: "#e0e0e0",
+          iconColor: "#333",
+          titleColor: colors.title,
+          textColor: colors.text,
+        },
+      ],
+    },
+  },
+  SectionPeople: {
+    label: "اسلایدر افراد تیم",
+    Component: SectionPeople,
+    defaultData: {
+      title: "عنوان جدید",
+      subtitle: "",
+      titleColor: colors.title,
+      subtitleColor: colors.text,
+      firstCardColor: "#F8D8D8",
+      secondCardColor: "#E2F2EA",
+      nameColor: colors.title,
+      roleColor: colors.text,
+      items: [],
+    },
+  },
+  SectionExperience: {
+    label: "نظرات مشتریان",
+    Component: SectionExperience,
+    defaultData: {
+      title: "عنوان جدید",
+      subtitle: "",
+      titleColor: colors.title,
+      subtitleColor: colors.text,
+      highlightColor: "#DCEEE3",
+      backImage: "",
+      cardBgColor: "#FFFFFF",
+      nameColor: colors.title,
+      jobColor: colors.text,
+      textColor: colors.text,
+      quoteIcon: "kama",
+      quoteIconColor: "#FCEDDE",
+      arrows: {
+        activeBg: "#FFFFFF",
+        inactiveBg: "#FFFFFF",
+        activeIcon: colors.text,
+        inactiveIcon: "#BDBEBF",
+        activeBorder: colors.text,
+        inactiveBorder: "#BDBEBF",
+        prevIconId: "",
+        nextIconId: "",
+      },
+      cards: [{ id: 1, image: "", name: "", job: "", text: "" }],
+    },
+  },
+  SectionBaner: {
+    label: "بنر دعوت به همکاری",
+    Component: SectionBaner,
+    defaultData: {
+      backgroundImage: "",
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      button: {
+        text: "دکمه",
+        link: "",
+        iconName: "",
+        bgColor: "#2DB36C",
+        textColor: "#FFFFFF",
+        iconColor: "#FFFFFF",
+      },
+    },
+  },
+  SectionServicesSlider: {
+    label: "معرفی خدمات (اسلایدر)",
+    Component: SectionServicesSlider,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      description: "",
+      descriptionColor: colors.text,
+      image: "",
+      dotImage: "",
+      items: [
+        {
+          id: 1,
+          icon: "",
+          iconBg: "#E2F2EA",
+          iconColor: "#49B87A",
+          title: "",
+          titleColor: colors.title,
+          description: "",
+          descriptionColor: colors.text,
+        },
+      ],
+    },
+  },
+  SectionServicesExperience: {
+    label: "نمونه‌کارهای خدمات",
+    Component: SectionServicesExperience,
+    defaultData: {
+      title: "",
+      titleColor: colors.title,
+      cardBgColor: "#FFFFFF",
+      shadow: "0px 0px 16px 0px #A6A6A629",
+      testimonialColorSets: [
+        {
+          label: "رنگ‌بندی کارت‌های فرد (۱، ۳، ۵ …)",
+          authorColor: colors.title,
+          roleColor: colors.text,
+          firstIconName: "kama",
+          firstIconColor: "#FB7A01",
+          secondIconName: "kamaR",
+          secondIconColor: "#FB7A01",
+          descriptionColor: colors.text,
+        },
+        {
+          label: "رنگ‌بندی کارت‌های زوج (۲، ۴ …)",
+          authorColor: colors.title,
+          roleColor: colors.text,
+          firstIconName: "kama",
+          firstIconColor: "#2ECC71",
+          secondIconName: "kamaR",
+          secondIconColor: "#2ECC71",
+          descriptionColor: colors.text,
+        },
+      ],
+      cards: [
+        {
+          id: 1,
+          badge: {
+            iconName: "pen",
+            iconColor: "#FF7A45",
+            iconBg: "#FFF1E9",
+          },
+          title: { text: "", color: colors.title },
+          logo: "",
+          description: { text: "", color: colors.text },
+          imagesBg: "",
+          images: { image1: "", image2: "", image3: "" },
+          testimonial: {
+            enabled: true,
+            cardBackground: "#1EA96505",
+            authorName: "",
+            roleText: "",
+            description: "",
+          },
+        },
+      ],
+    },
+  },
+  SectionServicesConstruction: {
+    label: "کارت‌های خدمات تخصصی",
+    Component: SectionServicesConstruction,
+    defaultData: {
+      title: "عنوان جدید",
+      subtitle: "",
+      titleColor: colors.title,
+      subtitleColor: colors.text,
+      cardBgColor: "#FFFFFF",
+      cardTitleColor: colors.title,
+      cardTextColor: colors.text,
+      cards: [
+        {
+          id: 1,
+          number: "01",
+          numberColor: colors.title,
+          numberGradient: "",
+          title: "",
+          text: "",
+          iconName: "",
+          iconBg: "#e0e0e0",
+          iconColor: "#333",
+        },
+      ],
+    },
+  },
+  SectionQuestions: {
+    label: "سوالات متداول",
+    Component: SectionQuestions,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      beforeColor: "#E2F2EA",
+      iconColorUp: "#059669",
+      iconColorDown: "#059669",
+      iconColorBg: "#ECFDF5",
+      iconUp: "arrow_circle_up",
+      iconDown: "arrow_circle_down",
+      Questions: [
+        { id: 1, title: "", text: "", titleColor: "", textColor: "#64748B" },
+      ],
+    },
+  },
+  SectionAboutUsSlider: {
+    label: "درباره ما - اسلایدر معرفی",
+    Component: SectionAboutUsSlider,
+    defaultData: {
+      title: "عنوان جدید",
+      description: "",
+      titleColor: colors.title,
+      textColor: colors.text,
+      beforeImage: "",
+      mainImage: "",
+      afterImage: "",
+    },
+  },
+  SectionAboutUsRecruitment: {
+    label: "درباره ما - جذب نیرو",
+    Component: SectionAboutUsRecruitment,
+    defaultData: {
+      title: "عنوان جدید",
+      description: "",
+      titleColor: colors.title,
+      textColor: colors.text,
+      Image: "",
+    },
+  },
+  SectionAboutUsValue: {
+    label: "درباره ما - ارزش‌ها",
+    Component: SectionAboutUsValue,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      iconColor: "#E2F2EA",
+      cardTitleColor: colors.title,
+      cardDescriptionColor: colors.text,
+      cardBgColor: "#FFFFFF",
+      cardShadowColor: "#9191911F",
+      cardBorderColor: "transparent",
+      cards: [{ id: 1, title: "", description: "" }],
+    },
+  },
+  SectionAboutUsWay: {
+    label: "درباره ما - مسیر آینده",
+    Component: SectionAboutUsWay,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      description: "",
+      descriptionColor: colors.text,
+      image: "",
+    },
+  },
+  SectionAboutUsLearn: {
+    label: "درباره ما - کاریار یاد می‌دهد",
+    Component: SectionAboutUsLearn,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      description: "",
+      descriptionColor: colors.text,
+      image: "",
+      iconColor: "#E2F2EA",
+    },
+  },
+  SectionAboutUsStart: {
+    label: "درباره ما - شروع ماجرا",
+    Component: SectionAboutUsStart,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      description: "",
+      descriptionColor: colors.text,
+      button: {
+        text: "دکمه",
+        link: "",
+        iconName: "",
+        bgColor: "#2DB36C",
+        textColor: "#FFFFFF",
+        iconColor: "#FFFFFF",
+      },
+    },
+  },
+  SectionAboutUsCompanyPeople: {
+    label: "درباره ما - افراد شرکت",
+    Component: SectionAboutUsCompanyPeople,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      firstCardColor: "#F8D8D8",
+      secondCardColor: "#E2F2EA",
+      nameColor: "#FFFFFF",
+      roleColor: "#FFFFFF",
+      cart: [],
+    },
+  },
+  SectionContactUsContact: {
+    label: "تماس با ما - اطلاعات تماس",
+    Component: SectionContactUsContact,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      image: "",
+      iconColor: "#E2F2EA",
+      phonNumber: "",
+      phonNumberColor: colors.text,
+      iconPhone: "",
+      iconPhonebg: "#E2F2EA",
+      iconPhoneColor: "#1EA965",
+      email: "",
+      emailColor: colors.text,
+      iconEmail: "",
+      iconEmailbg: "#E2F2EA",
+      iconEmailColor: "#1EA965",
+      addres: "",
+      addresColor: colors.text,
+      iconAddres: "",
+      iconAddresbg: "#E2F2EA",
+      iconAddresColor: "#1EA965",
+    },
+  },
+  SectionContactUsConstruction: {
+    label: "تماس با ما - مراحل همکاری",
+    Component: SectionContactUsConstruction,
+    defaultData: {
+      title: "عنوان جدید",
+      titleColor: colors.title,
+      cards: [
+        {
+          id: 1,
+          number: "01",
+          title: "",
+          text: "",
+          iconName: "",
+          iconBg: "#e0e0e0",
+          iconColor: "#333",
+          titleColor: colors.title,
+          textColor: colors.text,
+        },
+      ],
+    },
+  },
+  SectionFooter: {
+    label: "فوتر",
+    Component: SectionFooter,
+    defaultData: {
+      info: {
+        iconName: "Logo",
+        title: "کاریار استودیو",
+        titleColor: colors.title,
+        lineColor: "#E8E8E8",
+        text: "تمام حقوق محتوای این سایت متعلق به شرکت کاریار استودیو است.",
+        textColor: colors.text,
+        link: "",
+      },
+      socialLinks: [
+        { label: "واتس اپ", href: "#", iconName: "whatsApp", iconColor: "#157647" },
+        { label: "اینستاگرام", href: "#", iconName: "instagram", iconColor: "#157647" },
+        { label: "لینکدین", href: "#", iconName: "link", iconColor: "#157647" },
+      ],
+    },
+  },
+};
+
+export const sectionTypeOptions = Object.entries(sectionRegistry).map(
+  ([type, { label }]) => ({ type, label }),
+);

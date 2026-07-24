@@ -1,0 +1,122 @@
+@import url("vazirmatn.css");
+@import url("VazirFD-WOL.css");
+@import url("Estedad-VF.css");
+:root {
+  --DCDFE3-color: rgba(220, 223, 227, 1);
+  --242D35-color: rgba(36, 45, 53, 1);
+  --3EBD93-color: rgba(62, 189, 147, 1);
+  --EF4E4E-color: rgba(239, 78, 78, 1);
+  --6B7580-color: rgba(107, 117, 128, 1);
+  --A0CCF8-color: rgba(160, 204, 248, 1);
+  --FAFAFB-color: rgba(250, 250, 251, 1);
+  --FFFFFF-color: rgba(255, 255, 255, 1);
+  --000000-color: rgba(0, 0, 0, 1);
+  --0E33F3-color: rgba(14, 51, 243, 1);
+  --9BA1A8-color: rgba(155, 161, 168, 1);
+}
+* {
+  box-sizing: border-box;
+}
+
+/* سایز پیش‌فرض امن برای آیکون‌های سفارشی آپلودشده (تصویر بدون سایز صریح)؛
+   specificity صفر یعنی هر کلاس/استایل دیگری که جای دیگری برای همین <img> ست بشه
+   طبیعتاً برنده می‌شه و این فقط به‌عنوان fallback عمل می‌کنه. */
+:where(.icon-fallback-img) {
+  width: 1em;
+  height: 1em;
+  object-fit: contain;
+}
+
+:where(.icon-inline-svg) {
+  width: 1em;
+  height: 1em;
+  display: inline-flex;
+}
+.icon-inline-svg svg {
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  /* overflow-x: hidden وقتی تنها یک محور overflow ست بشه، طبق اسپک CSS محور دیگه هم
+     به‌صورت ضمنی auto می‌شه و position: sticky داخل صفحه رو خراب می‌کنه (مثلاً سایدبار
+     ویرایش در پنل ادمین). از clip استفاده می‌کنیم که این مشکل رو نداره. */
+  overflow-x: clip;
+}
+p,
+h2,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  direction: rtl;
+  background-color: #faf9f9;
+  font-family: "Vazir FD-WOL", "Vazirmatn", sans-serif;
+
+  /* height: 100vh; */
+  padding: 0;
+  margin: 0;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  padding: 16px 0;
+  gap: 16px;
+  max-width: 1280px;
+  flex-direction: column;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+} /* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Chrome, Safari, Edge */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none !important;
+  -webkit-appearance: none !important;
+}
+
+/* Firefox */
+input[type="date"] {
+  -moz-appearance: textfield !important;
+}
+
+/* Internet Explorer */
+input[type="date"]::-ms-clear,
+input[type="date"]::-ms-expand {
+  display: none;
+  width: 0;
+  height: 0;
+}
+h4 {
+  margin: 0;
+}
+@media (max-width: 600px) {
+  #root {
+    height: auto;
+  }
+}

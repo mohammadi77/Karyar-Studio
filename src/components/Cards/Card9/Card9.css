@@ -1,0 +1,56 @@
+/* استایل پایه کارت */
+.cart9 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* فاصله بین عنوان و توضیحات */
+  width: 100%;
+  height: auto; /* ارتفاع بر اساس محتوای داخلی */
+  min-height: 140px;
+  padding: 20px;
+  border-radius: 12px; /* معادل Radius/12 */
+  opacity: 1;
+  box-sizing: border-box;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* استایل عنوان */
+.cart9 h2 {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  margin: 0;
+}
+
+/* استایل متن توضیحات */
+.cart9 p {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: right;
+  margin: 0;
+}
+
+/* ===== حالت موبایل ===== */
+@media (max-width: 768px) {
+  .cart9 {
+    width: 100%; /* Fill */
+    min-height: 88px; /* Hug */
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .cart9 h2 {
+    font-size: 15px;
+  }
+
+  .cart9 p {
+    font-size: 14px;
+  }
+}

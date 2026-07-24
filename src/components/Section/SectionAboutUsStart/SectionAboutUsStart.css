@@ -1,0 +1,61 @@
+.section-about-us-start {
+  width: 100%;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+.start-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.start-title {
+  font-family: "Vazir FD-WOL", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
+}
+
+.start-description {
+  font-family: "Vazir FD-WOL", "Vazir", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
+}
+
+.start-button {
+  margin-top: 8px;
+}
+
+/* ===== موبایل ===== */
+@media (max-width: 768px) {
+  .section-about-us-start {
+    padding: 32px 16px;
+  }
+
+  .start-content {
+    gap: 16px;
+  }
+
+  .start-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .start-description {
+    font-size: 14px;
+    text-align: right; /* طبق اسپک، فقط متن موبایل راست‌چین است */
+  }
+}

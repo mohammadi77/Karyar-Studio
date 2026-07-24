@@ -1,0 +1,152 @@
+.SectionProject {
+  width: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+
+  padding: 16px 32px 48px;
+}
+
+.DivProject {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ProjectTitle {
+  font-family: "Vazir FD-WOL";
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0 32px;
+}
+
+.SliderWrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.desktopOnly {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.desktopOnly img {
+  width: 32px;
+  height: 32px;
+}
+
+.BeforeDesktop {
+  position: absolute;
+  right: 13px;
+  bottom: 11px;
+  z-index: -1;
+  width: 106px;
+  height: 106px;
+  object-fit: contain;
+}
+
+.AfterDesktop {
+  position: absolute;
+  left: 22px;
+  top: -50px;
+  z-index: -4;
+  width: 193px;
+  height: 154px;
+  object-fit: contain;
+}
+
+.ProjectCard {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.CardContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.CardImage img {
+  width: 100%;
+  display: block;
+}
+
+.SectionProject .swiper {
+  width: 100%;
+}
+
+.SectionProject .ProjectPagination {
+  position: relative;
+  margin-top: 30px;
+  padding: 8px;
+  gap: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.SectionProject .ProjectDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.SectionProject .ProjectDot.active {
+  width: 32px;
+  border-radius: 40px;
+}
+
+@media (max-width: 768px) {
+  .ProjectTitle {
+    font-size: 18px;
+  }
+
+  .CardContent {
+    flex-direction: column-reverse;
+    padding: 24px;
+  }
+
+  .desktopOnly,
+  .AfterDesktop {
+    display: none;
+  }
+
+  .SectionProject .swiper {
+    overflow: visible;
+  }
+  .SectionProject .swiper-slide {
+    width: 308px !important;
+  }
+  .BeforeDesktop {
+    right: -52px;
+    bottom: 63px;
+  }
+
+  .SectionProject .ProjectDot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .SectionProject .ProjectDot.active {
+    width: 32px;
+    height: 8px;
+  }
+}

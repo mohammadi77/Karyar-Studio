@@ -1,0 +1,248 @@
+.editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 68px;
+  z-index: 90;
+  background: #faf9f9;
+  padding: 14px 0;
+  box-shadow: 0 8px 12px -10px rgba(0, 0, 0, 0.15);
+}
+.editor-header-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  flex: 1;
+  min-width: 240px;
+}
+.editor-header-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 160px;
+}
+.editor-header-field label {
+  font-size: 12px;
+  color: #5c6a63;
+}
+.editor-header-field .field-input {
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #dcdfe3;
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 14px;
+}
+.editor-header-fixed-slug {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  color: #9ba1a8;
+  font-size: 13px;
+  direction: ltr;
+  justify-content: flex-end;
+}
+.editor-back-link {
+  font-size: 13px;
+  color: #5c6a63;
+  text-decoration: none;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.editor-save-btn {
+  height: 44px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 10px;
+  background: #1ea965;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.editor-save-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.editor-layout {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+@media (max-width: 960px) {
+  .editor-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.editor-preview {
+  order: 2;
+  background: #ffffff;
+  border: 1px solid #edf2f3;
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 300px;
+}
+.editor-preview-inner {
+  transform: scale(1);
+  transform-origin: top;
+}
+.editor-preview-empty {
+  padding: 60px 20px;
+  text-align: center;
+  color: #9ba1a8;
+  font-size: 14px;
+}
+
+.editor-sidebar {
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 88px;
+}
+
+.editor-section-list {
+  background: #ffffff;
+  border: 1px solid #edf2f3;
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.editor-section-item {
+  border: 1px solid #edf2f3;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.editor-section-item.disabled {
+  opacity: 0.6;
+  background: #fafafb;
+}
+
+.editor-toggle-btn {
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: none;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.editor-toggle-btn.on {
+  background: #e2f2ea;
+  color: #1ea965;
+}
+.editor-toggle-btn.off {
+  background: #fdecea;
+  color: #c0392b;
+}
+
+.editor-section-item-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  background: #fafafb;
+}
+.editor-section-item-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+  color: #2f4858;
+  font-weight: 600;
+}
+.editor-section-item-ref {
+  font-size: 11px;
+  font-weight: 500;
+  color: #1ea965;
+}
+.editor-section-item-edit-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1ea965;
+  white-space: nowrap;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.editor-section-item-edit-link:hover {
+  text-decoration: underline;
+}
+.editor-icon-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: none;
+  background: #ffffff;
+  border: 1px solid #dcdfe3;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.editor-icon-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.editor-icon-btn svg {
+  width: 14px;
+  height: 14px;
+}
+.editor-icon-btn.danger {
+  color: #c0392b;
+  border-color: #f5c2c0;
+}
+
+.editor-add-section {
+  background: #ffffff;
+  border: 1px solid #edf2f3;
+  border-radius: 14px;
+  padding: 14px;
+}
+.editor-add-section h3 {
+  font-size: 13px;
+  color: #5c6a63;
+  margin-bottom: 10px;
+}
+.editor-add-section select {
+  width: 100%;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #dcdfe3;
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.editor-add-section button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #e2f2ea;
+  color: #1ea965;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}

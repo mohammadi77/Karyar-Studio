@@ -1,0 +1,119 @@
+/* Card8.css */
+
+.card8-container {
+  margin: 0;
+  /*مرکزچین*/
+  border-radius: 1rem;
+  padding: 16px;
+}
+
+.card8-container.open {
+  background-color: #ffffff;
+  border-color: #d1fae5;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card8-container.closed {
+  background-color: #ffffff;
+  border-color: #f1f5f9;
+}
+
+.card8-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: right;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  justify-content: space-between;
+  /* چیدمان: عنوان در راست، آیکون در چپ (چون dir=rtl) */
+}
+
+/* ===== دایره آیکون ===== */
+.card8-icon-wrapper {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 40px;
+  angle: 180 deg;
+  opacity: 1;
+  gap: 8px;
+  padding: 8px;
+}
+
+.card8-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ===== عنوان ===== */
+.card8-title {
+  font-family: Vazir FD-WOL;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+/* ===== محتوای بازشونده ===== */
+.card8-body {
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+}
+
+.card8-body.open {
+  max-height: max-content;
+  opacity: 1;
+}
+
+.card8-text {
+  font-family: Vazir FD-WOL;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  letter-spacing: 0%;
+  text-align: right;
+}
+@media (max-width: 780px) {
+  .card8-title {
+    font-family: Vazir FD-WOL;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+  .card8-text {
+    margin-left: 44px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+  .card8-icon-wrapper {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 40px;
+    padding: 8px;
+    gap: 8px;
+    angle: 0 deg;
+    opacity: 1;
+  }
+  .card8-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
