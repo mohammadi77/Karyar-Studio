@@ -2,7 +2,7 @@
 
 A modern and responsive website built with React and Vite.
 
-## 🌐 Live Demo
+npm install --save-dev gh-pages## 🌐 Live Demo
 
 Coming Soon
 
