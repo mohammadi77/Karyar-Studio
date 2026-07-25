@@ -2,10 +2,12 @@
   "name": "karyar-studio-final-99",
   "services": {
     "frontend": {
-      "root": "frontend"
+      "root": "src",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
     },
     "backend": {
-      "root": "backend",
+      "root": "server",
       "entrypoint": "server.js"
     }
   },
