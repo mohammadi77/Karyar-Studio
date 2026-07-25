@@ -1,9 +1,8 @@
 {
-  "name": "karyar-studio-main-2025",
+  "name": "karyar-studio-final-99",
   "services": {
     "frontend": {
-      "root": "frontend",
-      "framework": "react"
+      "root": "frontend"
     },
     "backend": {
       "root": "backend",
