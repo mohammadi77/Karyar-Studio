@@ -1,18 +1,22 @@
 {
-  "services": {
-    "frontend": {
-      "root": "frontend/", // مسیر پوشه‌ی فرانت‌اند
-      "framework": "react" // یا "nextjs" یا "vue"
+  "services": [
+    {
+      "name": "frontend",
+      "root": "frontend",
+      "framework": "react"
     },
-    "backend": {
-      "root": "backend/", // مسیر پوشه‌ی بک‌اند
-      "entrypoint": "server.js" // فایل اصلی بک‌اند (مثلاً server.js یا app.py)
+    {
+      "name": "backend",
+      "root": "backend",
+      "entrypoint": "server.js"
     }
-  },
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": { "service": "frontend" }
+      "destination": {
+        "service": "frontend"
+      }
     }
   ]
 }
