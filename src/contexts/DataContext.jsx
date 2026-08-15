@@ -5,7 +5,7 @@ import { useToast } from "../hooks/useToast";
 import LoadingScreen from "../components/LoadingScreen/LoadingScreen";
 import { getFetchErrorMessage } from "../utils/fetchErrorMessage";
 
-const MIN_LOADING_MS = 3000;
+const MIN_LOADING_MS = 2000;
 
 async function fetchResource(key) {
   let res;

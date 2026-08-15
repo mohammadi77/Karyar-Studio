@@ -176,16 +176,26 @@
   font-weight: 500;
   color: #1ea965;
 }
-.editor-section-item-edit-link {
+.editor-section-item-edit-btn {
   font-size: 12px;
   font-weight: 600;
   color: #1ea965;
   white-space: nowrap;
-  text-decoration: none;
   flex-shrink: 0;
+  background: #e2f2ea;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
 }
-.editor-section-item-edit-link:hover {
-  text-decoration: underline;
+.editor-section-item-edit-btn:hover {
+  background: #d0e8db;
+}
+.editor-section-item-edit-btn.active {
+  background: #2f4858;
+  color: #ffffff;
 }
 .editor-icon-btn {
   width: 28px;
@@ -245,4 +255,19 @@
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
+}
+
+/* ---- Inline section editor ---- */
+.editor-section-item.expanded {
+  border-color: #1ea965;
+}
+.editor-section-inline-editor {
+  padding: 16px;
+  background: #f8fafa;
+  border-top: 1px solid #edf2f3;
+}
+.editor-section-inline-editor .section-source-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }

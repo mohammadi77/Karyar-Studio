@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { useAppData } from "../../../hooks/useAppData";
 import { useTeamMembersApi } from "../../../hooks/useTeamMembersApi";
+import { useResourceApi } from "../../../hooks/useResourceApi";
 import { useToast } from "../../../hooks/useToast";
 import ImageField from "../../../components/Admin/ImageField/ImageField";
 import "./AdminTeamMembers.css";
@@ -58,8 +59,10 @@ function MemberForm({ value, onChange, onSubmit, onCancel, submitting, submitLab
 function AdminTeamMembers() {
   const { data } = useAppData();
   const { createTeamMember, updateTeamMember, deleteTeamMember } = useTeamMembersApi();
+  const { updateResource } = useResourceApi();
   const { showToast } = useToast();
   const members = useMemo(() => data.teamMembers || [], [data.teamMembers]);
+  const defaultImage = data.teamSettings?.defaultImage || "";
 
   const [showForm, setShowForm] = useState(false);
   const [newMember, setNewMember] = useState(emptyForm);
@@ -142,6 +145,17 @@ function AdminTeamMembers() {
         >
           {showForm ? "بستن فرم" : "+ عضو جدید"}
         </button>
+      </div>
+
+      <div className="team-default-image">
+        <div className="team-default-image-info">
+          <h3>تصویر پیش‌فرض اعضای تیم</h3>
+          <p>این تصویر برای اعضای تیم که عکسی ندارند نمایش داده می‌شود</p>
+        </div>
+        <ImageField
+          value={defaultImage}
+          onChange={(image) => updateResource("teamSettings", { defaultImage: image })}
+        />
       </div>
 
       {showForm && (

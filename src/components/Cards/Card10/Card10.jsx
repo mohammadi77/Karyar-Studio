@@ -1,4 +1,5 @@
 import defaultProfile from "../../../assets/images/profile.png";
+import { useAppData } from "../../../hooks/useAppData";
 import "./Card10.css";
 
 const Card10 = ({
@@ -9,6 +10,9 @@ const Card10 = ({
   nameColor,
   roleColor,
 }) => {
+  const { data } = useAppData();
+  const fallbackImage = data.teamSettings?.defaultImage || defaultProfile;
+
   return (
     <div className="Card10">
       <div className="imageBox">
@@ -19,10 +23,10 @@ const Card10 = ({
 
         <img
           className="imageBox-photo"
-          src={image || defaultProfile}
+          src={image || fallbackImage}
           alt={name}
           onError={(e) => {
-            e.target.src = defaultProfile;
+            e.target.src = fallbackImage;
           }}
         />
 

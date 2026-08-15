@@ -9,12 +9,12 @@ export function usePagesApi() {
   const { showToast } = useToast();
 
   const createPage = useCallback(
-    async ({ name, slug }) => {
+    async ({ name, slug, showInMenu = true }) => {
       try {
         const page = await apiRequest("/pages", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, slug, sections: [], enabled: true }),
+          body: JSON.stringify({ name, slug, sections: [], enabled: true, showInMenu }),
         });
         await refreshKey("pages");
         return page;

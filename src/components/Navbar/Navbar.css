@@ -106,7 +106,7 @@
   width: 22px;
   height: 2px;
   border-radius: 2px;
-  background: var(--item-color, #5c6a63);
+  background: var(--hamburger-color, #5c6a63);
   transition:
     transform 0.3s,
     opacity 0.3s;
@@ -168,7 +168,7 @@
   display: none;
 }
 .navbar-force-hamburger .navbar-item.active {
-  background: var(--hover-color, #edf2f3);
+  background: var(--active-bg-color, #edf2f3);
 }
 
 .navbar-force-hamburger .navbar-overlay {

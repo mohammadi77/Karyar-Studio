@@ -18,6 +18,7 @@ import AdminSectionTypeManager from "./pages/Admin/AdminSectionTypeManager/Admin
 import AdminResourceEditor from "./pages/Admin/AdminResourceEditor/AdminResourceEditor";
 import AdminIconLibrary from "./pages/Admin/AdminIconLibrary/AdminIconLibrary";
 import AdminProfile from "./pages/Admin/AdminProfile/AdminProfile";
+import AdminAddPage from "./pages/Admin/AdminAddPage/AdminAddPage";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <Route index element={<AdminOverview />} />
         <Route path="pages" element={<AdminDashboard />} />
         <Route path="team" element={<AdminTeamMembers />} />
+        <Route path="add-page" element={<AdminAddPage />} />
         <Route path="pages/:id" element={<AdminPageEditor />} />
         <Route path="sections" element={<AdminSectionTypesIndex />} />
         <Route path="sections/:type" element={<AdminSectionTypeManager />} />

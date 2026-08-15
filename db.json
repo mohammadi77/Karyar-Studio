@@ -17,7 +17,7 @@
             "bgShapeColor": "#FCEDDE",
             "button": {
               "text": "شروع همکاری",
-              "link": "/",
+              "link": "http://localhost:5174/user",
               "iconName": "arrow_left",
               "bgColor": "#FB7A01",
               "textColor": "#FFFFFF",
@@ -1072,6 +1072,189 @@
       "enabled": true,
       "id": "-hH_g1AL99Q",
       "order": 2
+    },
+    {
+      "name": "نمونه",
+      "slug": "example",
+      "sections": [
+        {
+          "id": "s-1786788954088-fy9s9",
+          "type": "SectionServices",
+          "mode": "reference",
+          "refPageId": "home",
+          "refSectionId": "home-3",
+          "data": {
+            "title": "عنوان جدید",
+            "titleColor": "#2F4858",
+            "cardTitleColor": "#2F4858",
+            "cardDescriptionColor": "#5C6A63",
+            "cardShadowColor": "#FB7A0129",
+            "cardBgColor": "#FFFFFF",
+            "button": {
+              "text": "خدمات ما",
+              "link": "",
+              "iconName": "",
+              "bgColor": "#1EA965",
+              "textColor": "#FFFFFF",
+              "iconColor": "#FFFFFF"
+            },
+            "services": [
+              {
+                "id": 1,
+                "icon": "",
+                "title": "",
+                "description": "",
+                "iconBgColor": "#E2F2EA",
+                "iconColor": "#1EA965",
+                "shadowColor": "#FB7A0129"
+              }
+            ]
+          },
+          "overrides": {
+            "services": [
+              {
+                "id": 1,
+                "icon": "pen",
+                "title": "طراحی محصول",
+                "description": "با بررسی مسئله، شناخت کاربران و طراحی تجربه‌ای دقیق، محصولاتی قابل اعتماد و مؤثر ارائه می‌دهیم.",
+                "iconBgColor": "#E2F2EA",
+                "iconColor": "#1EA965",
+                "shadowColor": "#01B87A29"
+              },
+              {
+                "id": 2,
+                "icon": "pen_line",
+                "title": "طراحی وب‌سایت",
+                "description": "وب‌سایت‌هایی سریع، کاربرپسند و متناسب با اهداف کسب‌وکار شما  پیاده‌سازی می‌کنیم تا حضور دیجیتال برندتان تقویت شود.",
+                "iconBgColor": "#FCEDDE",
+                "iconColor": "#FB7A01",
+                "shadowColor": "#FB7A0129"
+              },
+              {
+                "id": 3,
+                "icon": "/uploads/1784362799459-bikfut.svg",
+                "title": "تست",
+                "description": "تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست ",
+                "iconBgColor": "",
+                "iconColor": "#ff0000",
+                "shadowColor": ""
+              },
+              {
+                "id": 4,
+                "icon": "",
+                "title": "تست ",
+                "description": "تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست ",
+                "iconBgColor": "",
+                "iconColor": "",
+                "shadowColor": ""
+              },
+              {
+                "id": 5,
+                "icon": "",
+                "title": "تست ",
+                "description": "تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست ",
+                "iconBgColor": "",
+                "iconColor": "",
+                "shadowColor": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "s-1786791539029-29srf",
+          "type": "SectionServices",
+          "mode": "custom",
+          "refPageId": "",
+          "refSectionId": "",
+          "data": {
+            "title": "عنوان جدید",
+            "titleColor": "#2F4858",
+            "cardTitleColor": "#2F4858",
+            "cardDescriptionColor": "#5C6A63",
+            "cardShadowColor": "#FB7A0129",
+            "cardBgColor": "#FFFFFF",
+            "button": {
+              "text": "خدمات ما",
+              "link": "",
+              "iconName": "",
+              "bgColor": "#1EA965",
+              "textColor": "#FFFFFF",
+              "iconColor": "#FFFFFF"
+            },
+            "services": [
+              {
+                "id": 1,
+                "icon": "",
+                "title": "",
+                "description": "",
+                "iconBgColor": "#E2F2EA",
+                "iconColor": "#1EA965",
+                "shadowColor": "#FB7A0129"
+              }
+            ]
+          }
+        }
+      ],
+      "enabled": false,
+      "id": "7949ujUCQkw",
+      "order": 4
+    },
+    {
+      "name": "نمونه",
+      "slug": "example1",
+      "sections": [],
+      "enabled": false,
+      "id": "zZT1VOJb8mw",
+      "order": 5
+    },
+    {
+      "name": "نمونه",
+      "slug": "example2",
+      "sections": [],
+      "enabled": false,
+      "id": "RWiBm4Ba6ps",
+      "order": 6
+    },
+    {
+      "name": "نمونه",
+      "slug": "example3",
+      "sections": [],
+      "enabled": false,
+      "id": "7xssI90m_8U",
+      "order": 7
+    },
+    {
+      "name": "کاربر",
+      "slug": "user",
+      "sections": [
+        {
+          "id": "s-1786803016912-yt47l",
+          "type": "SectionSlider",
+          "mode": "reference",
+          "refPageId": "home",
+          "refSectionId": "home-1",
+          "data": {
+            "title": "عنوان جدید",
+            "description": "توضیحات این بخش را وارد کنید",
+            "image": "",
+            "titleColor": "#2F4858",
+            "textColor": "#5C6A63",
+            "bgShapeColor": "#FCEDDE",
+            "button": {
+              "text": "دکمه",
+              "link": "/",
+              "iconName": "",
+              "bgColor": "#FB7A01",
+              "textColor": "#FFFFFF",
+              "iconColor": "#FFFFFF"
+            }
+          },
+          "overrides": {}
+        }
+      ],
+      "enabled": true,
+      "showInMenu": false,
+      "id": "Ri7iIbp3LaA"
     }
   ],
   "navbar": {
@@ -1081,7 +1264,9 @@
       "title": "#4A5B52",
       "item": "#5C6A63",
       "active": "#FB7A01",
-      "hover": "#FB7A01"
+      "hover": "#FB7A01",
+      "hamburger": "#5C6A63",
+      "activeBg": "#f2d399"
     }
   },
   "notFound": {
@@ -1091,7 +1276,7 @@
   },
   "admin": {
     "username": "admin",
-    "password": "123456",
+    "password": "123456789",
     "name": "محمد",
     "avatar": "/uploads/1784902012425-vv7jwa.jpg",
     "email": "",
@@ -1155,6 +1340,9 @@
       "id": "DBcb8XwYxqQ"
     }
   ],
+  "teamSettings": {
+    "defaultImage": "/uploads/1786803950079-qlazsl.webp"
+  },
   "pageViews": [
     {
       "path": "/",
@@ -1345,6 +1533,311 @@
       "path": "/",
       "timestamp": 1785005050480,
       "id": "0tLx_CpWBDo"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786787867054,
+      "id": "rH9uehDkqU0"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786787869508,
+      "id": "IF__IZb_WRU"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786787875336,
+      "id": "snd_ncLXNSA"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786788351774,
+      "id": "ZI1qnsCahlA"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786788408216,
+      "id": "t2jsAt-5N5I"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786788478382,
+      "id": "VqjJ251YwBE"
+    },
+    {
+      "path": "/ContactUs",
+      "timestamp": 1786788486645,
+      "id": "aS9CtgirH-k"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786788495284,
+      "id": "gW3yTqY7EFg"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786788610229,
+      "id": "oywE6mhZ0Vc"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786788650355,
+      "id": "Ccx36Pix7X0"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786788669714,
+      "id": "B0t1WFbVFEw"
+    },
+    {
+      "path": "//%D8%AB%D8%AB",
+      "timestamp": 1786788726085,
+      "id": "rCT4tC4-Nxo"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786788731073,
+      "id": "DF9qUmqt4rE"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786788898623,
+      "id": "f_R03_Q-474"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786789072699,
+      "id": "2slliyS9fbQ"
+    },
+    {
+      "path": "/example",
+      "timestamp": 1786789078896,
+      "id": "uRD4IobaEqU"
+    },
+    {
+      "path": "/example",
+      "timestamp": 1786789220451,
+      "id": "iNFi5s5cGxI"
+    },
+    {
+      "path": "/example",
+      "timestamp": 1786789277337,
+      "id": "8Gvmb1ng1qM"
+    },
+    {
+      "path": "/example",
+      "timestamp": 1786789549252,
+      "id": "RHv6Bli2Lnc"
+    },
+    {
+      "path": "/example",
+      "timestamp": 1786789576209,
+      "id": "0ndljnGJoEE"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786789585112,
+      "id": "lYvOfY5nCe8"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786789594438,
+      "id": "4bDhkDloKPc"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786789611585,
+      "id": "UYLMQiAVDgM"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786789633928,
+      "id": "AdreRZj0tdY"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786789782640,
+      "id": "aURFQT0pIAI"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786790096360,
+      "id": "doXXHOPxr-c"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786790210521,
+      "id": "m1SL_yDurmo"
+    },
+    {
+      "path": "/AboutUs",
+      "timestamp": 1786790272769,
+      "id": "9_sqjopz4Mw"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786790306603,
+      "id": "QRHQUxqfPbI"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786790344874,
+      "id": "n6NYxz2SDS8"
+    },
+    {
+      "path": "/ContactUs",
+      "timestamp": 1786790379303,
+      "id": "mxIxj4GQ3YU"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786790440925,
+      "id": "loF-kTHyn4U"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786790488753,
+      "id": "Blzj-ajHk1U"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786790549937,
+      "id": "sJi6OATYgO8"
+    },
+    {
+      "path": "/AboutUs",
+      "timestamp": 1786790650509,
+      "id": "KZn5QWiuI1w"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786790654964,
+      "id": "rlU9knhHfyo"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786790664922,
+      "id": "Vt7mJuBxSSQ"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786803072264,
+      "id": "jXuxIFjqhMQ"
+    },
+    {
+      "path": "/user",
+      "timestamp": 1786803076531,
+      "id": "93OKz8KuOx4"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786803090835,
+      "id": "T02042ShK8w"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786803141802,
+      "id": "6Qp6uYBRFbA"
+    },
+    {
+      "path": "/user",
+      "timestamp": 1786803145997,
+      "id": "0KIORhJuMTc"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786803154027,
+      "id": "3COfvzXEikQ"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786803340196,
+      "id": "vTJhD4wlj6I"
+    },
+    {
+      "path": "/AboutUs",
+      "timestamp": 1786803350271,
+      "id": "xPCgFNyfm3g"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786803461978,
+      "id": "toBndtkaeRU"
+    },
+    {
+      "path": "/AboutUs",
+      "timestamp": 1786803538394,
+      "id": "MtmGwO2Evm0"
+    },
+    {
+      "path": "/AboutUs",
+      "timestamp": 1786803802823,
+      "id": "dNvxixErilY"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786803821213,
+      "id": "Otna1K2Atco"
+    },
+    {
+      "path": "/AboutUs",
+      "timestamp": 1786803904438,
+      "id": "LOJNxlUVNfM"
+    },
+    {
+      "path": "/AboutUs",
+      "timestamp": 1786803958522,
+      "id": "iYK_tkpPphI"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786804209080,
+      "id": "lwI2WQgAeiw"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786804251613,
+      "id": "edXVeCg4_lE"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786804323164,
+      "id": "hNQZpld47X4"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786804491525,
+      "id": "s9abXeNcP3Q"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786804943337,
+      "id": "QAx4ik0hwkc"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786804952250,
+      "id": "2gjDQUOxt8o"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786805013007,
+      "id": "At2U3N7vBpo"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1786805094968,
+      "id": "PP8fV5oX1I0"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786805143133,
+      "id": "8-jrVV2c1Lc"
+    },
+    {
+      "path": "/",
+      "timestamp": 1786805445984,
+      "id": "_gWZFfgCN9U"
     }
   ],
   "activeSessions": [
@@ -1411,8 +1904,56 @@
     {
       "sessionId": "934fa07d-d048-410e-9916-f0e75eb6e320",
       "path": "/",
-      "lastSeen": 1785005406693,
+      "lastSeen": 1785007893847,
       "id": "m72vrJdtj10"
+    },
+    {
+      "sessionId": "55a9f89a-2fb6-41d6-b8f5-791c135f4c87",
+      "path": "/",
+      "lastSeen": 1786787930232,
+      "id": "GozKZLfRYsQ"
+    },
+    {
+      "sessionId": "db7cf27f-fda1-453a-aac6-1bfe773b0bcd",
+      "path": "/AboutUs",
+      "lastSeen": 1786791743108,
+      "id": "7vJx6BJu0wk"
+    },
+    {
+      "sessionId": "7d9a3d47-d77d-4b2c-a710-5fb26c878eb5",
+      "path": "/",
+      "lastSeen": 1786788880326,
+      "id": "ccIMUl0xtgY"
+    },
+    {
+      "sessionId": "9d2a05aa-a12f-4691-a8fb-d2a00f931f0d",
+      "path": "/",
+      "lastSeen": 1786791744289,
+      "id": "3bE_Evo75Ps"
+    },
+    {
+      "sessionId": "1f979aa9-2fd9-4d3b-ba81-911697d3d4e0",
+      "path": "/",
+      "lastSeen": 1786803157210,
+      "id": "GrakSRGWHA0"
+    },
+    {
+      "sessionId": "23ed6fec-3ac6-46a2-8aca-2d9b75313260",
+      "path": "/",
+      "lastSeen": 1786805655184,
+      "id": "pyipt6VmCYA"
+    },
+    {
+      "sessionId": "8de9b6fd-43d1-4e95-8fdf-97cac16ee480",
+      "path": "/",
+      "lastSeen": 1786804238462,
+      "id": "_uU7eOyY_l0"
+    },
+    {
+      "sessionId": "2af224ec-ad64-4367-89c7-9ac275e9b04d",
+      "path": "/Services",
+      "lastSeen": 1786805118041,
+      "id": "8VrGuo6scX4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

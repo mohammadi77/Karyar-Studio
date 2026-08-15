@@ -6,6 +6,7 @@ import { useToast } from "../../../hooks/useToast";
 import { sectionRegistry, sectionTypeOptions } from "../../../config/sectionRegistry";
 import { customIcons } from "../../../components/CustomIcons/CustomIcons";
 import PageRender from "../../../components/PageRender/PageRender";
+import SectionSourceEditor from "../../../components/Admin/SectionSourceEditor/SectionSourceEditor";
 import { slugify, validateSlug } from "../../../utils/slug";
 import "./AdminPageEditor.css";
 
@@ -49,6 +50,7 @@ function AdminPageEditorForm({ page }) {
   const [slug, setSlug] = useState(page.slug);
   const [newType, setNewType] = useState(sectionTypeOptions[0]?.type || "");
   const [saving, setSaving] = useState(false);
+  const [editingSectionId, setEditingSectionId] = useState(null);
 
   const moveSection = (index, direction) => {
     const targetIndex = index + direction;
@@ -60,6 +62,10 @@ function AdminPageEditorForm({ page }) {
 
   const toggleSectionEnabled = (section) => {
     updateSection(section.id, { ...section, enabled: section.enabled === false });
+  };
+
+  const toggleEditSection = (sectionId) => {
+    setEditingSectionId((prev) => (prev === sectionId ? null : sectionId));
   };
 
   const removeSection = (sectionId) => {
@@ -179,13 +185,14 @@ function AdminPageEditorForm({ page }) {
             {sections.map((section, index) => {
               const entry = sectionRegistry[section.type];
               const isEnabled = section.enabled !== false;
+              const isEditing = editingSectionId === section.id;
               const refPage =
                 section.mode === "reference" && section.refPageId
                   ? (data.pages || []).find((p) => p.id === section.refPageId)
                   : null;
               return (
                 <div
-                  className={`editor-section-item ${isEnabled ? "" : "disabled"}`}
+                  className={`editor-section-item ${isEnabled ? "" : "disabled"} ${isEditing ? "expanded" : ""}`}
                   key={section.id}
                 >
                   <div className="editor-section-item-head">
@@ -217,12 +224,13 @@ function AdminPageEditorForm({ page }) {
                       )}
                     </span>
 
-                    <Link
-                      to={`/admin/sections/${section.type}`}
-                      className="editor-section-item-edit-link"
+                    <button
+                      type="button"
+                      className={`editor-section-item-edit-btn ${isEditing ? "active" : ""}`}
+                      onClick={() => toggleEditSection(section.id)}
                     >
-                      ویرایش محتوا ←
-                    </Link>
+                      {isEditing ? "بستن ←" : "ویرایش محتوا ←"}
+                    </button>
 
                     <button
                       type="button"
@@ -241,6 +249,16 @@ function AdminPageEditorForm({ page }) {
                       ×
                     </button>
                   </div>
+
+                  {isEditing && (
+                    <div className="editor-section-inline-editor">
+                      <SectionSourceEditor
+                        section={section}
+                        onChange={(nextSection) => updateSection(section.id, nextSection)}
+                        currentPageId={page.id}
+                      />
+                    </div>
+                  )}
                 </div>
               );
             })}

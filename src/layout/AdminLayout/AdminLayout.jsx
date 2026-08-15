@@ -82,6 +82,15 @@ function AdminLayout() {
             مدیریت صفحات
           </NavLink>
           <NavLink
+            to="/admin/add-page"
+            onClick={closeSidebar}
+            className={({ isActive }) =>
+              `admin-sidebar-link ${isActive ? "active" : ""}`
+            }
+          >
+            افزودن صفحه
+          </NavLink>
+          <NavLink
             to="/admin/team"
             onClick={closeSidebar}
             className={({ isActive }) =>

@@ -1,4 +1,5 @@
-import React from "react";
+import defaultProfile from "../../../assets/images/profile.png";
+import { useAppData } from "../../../hooks/useAppData";
 import "./Card4.css";
 
 const Card4 = ({
@@ -9,6 +10,9 @@ const Card4 = ({
   roleColor,
   nameColor,
 }) => {
+  const { data } = useAppData();
+  const fallbackImage = data.teamSettings?.defaultImage || defaultProfile;
+
   return (
     <div className="card4">
       <div className="card4-imageBox">
@@ -17,7 +21,13 @@ const Card4 = ({
           style={{ backgroundColor: bgColor }}
         ></div>
 
-        <img src={image} alt={name} />
+        <img
+          src={image || fallbackImage}
+          alt={name}
+          onError={(e) => {
+            e.target.src = fallbackImage;
+          }}
+        />
       </div>
 
       <div className="card4-textBox">

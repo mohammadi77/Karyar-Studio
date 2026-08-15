@@ -14,6 +14,8 @@ const defaultNavbar = {
     item: "#5C6A63",
     active: "#2F4858",
     hover: "#EDF2F3",
+    hamburger: "#5C6A63",
+    activeBg: "#EDF2F3",
   },
 };
 
@@ -36,8 +38,9 @@ function Navbar() {
         ...(navbarDataFromServer.colors || {}),
       },
       // آیتم‌های منو مستقیماً از صفحات فعال ساخته می‌شوند تا با ساخت/غیرفعال‌سازی صفحه هم‌گام باشند
+      // صفحاتی که showInMenu === false دارند در منو نمایش داده نمی‌شوند
       menuItems: (data.pages || [])
-        .filter((page) => page.enabled !== false)
+        .filter((page) => page.enabled !== false && page.showInMenu !== false)
         .slice()
         .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
         .map((page) => ({
@@ -105,6 +108,8 @@ function Navbar() {
     "--item-color": colors.item || "#5C6A63",
     "--active-color": colors.active || "#2F4858",
     "--hover-color": colors.hover || "#EDF2F3",
+    "--hamburger-color": colors.hamburger || "#5C6A63",
+    "--active-bg-color": colors.activeBg || "#EDF2F3",
   };
 
   // ===== آستانه همبرگری: در موبایل بیشتر از ۴ آیتم، در دسکتاپ بیشتر از ۷ آیتم =====

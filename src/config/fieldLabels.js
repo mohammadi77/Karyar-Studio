@@ -1,5 +1,7 @@
 const FIELD_LABELS = {
   title: "عنوان",
+  item: "رنگ متن",
+  active: "رنگ فعال",
   titleColor: "رنگ عنوان",
   "title:color": "رنگ عنوان",
   subtitle: "زیرعنوان",
@@ -98,6 +100,8 @@ const FIELD_LABELS = {
   before: "تصویر قبل",
   after: "تصویر بعد",
   paragraph: "متن پاراگراف",
+  hover: "رنگ هاور",
+  hamburger: "رنگ آیکون همبرگری",
   activeBg: "رنگ پس‌زمینه فعال",
   inactiveBg: "رنگ پس‌زمینه غیرفعال",
   activeIcon: "رنگ آیکون فعال",
