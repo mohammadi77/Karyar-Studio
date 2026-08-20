@@ -10,7 +10,12 @@ function AdminDashboard() {
   const { data } = useAppData();
   const { createPage, deletePage, updatePage } = usePagesApi();
   const { showToast } = useToast();
-  const pages = useMemo(() => data.pages || [], [data.pages]);
+  const allPages = useMemo(() => data.pages || [], [data.pages]);
+  // Only show pages that appear in the menu (showInMenu !== false)
+  const pages = useMemo(
+    () => allPages.filter((p) => p.showInMenu !== false),
+    [allPages],
+  );
   const sortedPages = useMemo(
     () => [...pages].sort((a, b) => (a.order ?? 0) - (b.order ?? 0)),
     [pages],
@@ -35,7 +40,7 @@ function AdminDashboard() {
       showToast("نام صفحه را وارد کنید", "error");
       return;
     }
-    const slugError = validateSlug(cleanSlug, pages);
+    const slugError = validateSlug(cleanSlug, allPages);
     if (slugError) {
       showToast(slugError, "error");
       return;
@@ -90,8 +95,8 @@ function AdminDashboard() {
     <div>
       <div className="admin-dashboard-header">
         <div>
-          <h1>مدیریت صفحات</h1>
-          <p>صفحات سایت را بسازید، ویرایش یا حذف کنید</p>
+          <h1>مدیریت صفحات منو</h1>
+          <p>صفحات منوی سایت را بسازید، ویرایش یا حذف کنید</p>
         </div>
         <button
           type="button"

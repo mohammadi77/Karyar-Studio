@@ -8,7 +8,7 @@ import "./AdminAddPage.css";
 
 function AdminAddPage() {
   const { data } = useAppData();
-  const { createPage, deletePage } = usePagesApi();
+  const { createPage, deletePage, updatePage } = usePagesApi();
   const { showToast } = useToast();
   const pages = useMemo(() => data.pages || [], [data.pages]);
 
@@ -85,11 +85,21 @@ function AdminAddPage() {
     }
   };
 
+  const handleToggleEnabled = async (page) => {
+    const page_ = await updatePage(page.id, { enabled: !page.enabled });
+    if (page_) {
+      showToast(
+        page_.enabled ? "صفحه فعال شد" : "صفحه غیرفعال شد",
+        "success",
+      );
+    }
+  };
+
   return (
     <div>
       <div className="admin-addpage-header">
         <div>
-          <h1>افزودن صفحه</h1>
+          <h1>افزودن صفحات (لینک)</h1>
           <p>
             صفحاتی بسازید که در منو نمایش داده نمی‌شوند و لینک آن‌ها را
             مستقیماً به اشتراک بگذارید
@@ -153,10 +163,17 @@ function AdminAddPage() {
       ) : (
         <div className="admin-addpage-list">
           {hiddenPages.map((page) => (
-            <div className="admin-addpage-card" key={page.id}>
+            <div
+              className={`admin-addpage-card ${page.enabled === false ? "disabled" : ""}`}
+              key={page.id}
+            >
               <div className="admin-addpage-card-head">
                 <h3>{page.name}</h3>
-                <span className="admin-addpage-badge">خارج از منو</span>
+                <span
+                  className={`admin-addpage-status ${page.enabled === false ? "off" : "on"}`}
+                >
+                  {page.enabled === false ? "غیرفعال" : "فعال"}
+                </span>
               </div>
               <span className="admin-addpage-slug">/{page.slug}</span>
               <div className="admin-addpage-link-row">
@@ -183,6 +200,13 @@ function AdminAddPage() {
                 >
                   ویرایش
                 </Link>
+                <button
+                  type="button"
+                  className="admin-addpage-toggle-btn"
+                  onClick={() => handleToggleEnabled(page)}
+                >
+                  {page.enabled === false ? "فعال‌سازی" : "غیرفعال‌سازی"}
+                </button>
                 <button
                   type="button"
                   className="admin-addpage-delete-btn"

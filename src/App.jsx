@@ -20,9 +20,11 @@ import AdminIconLibrary from "./pages/Admin/AdminIconLibrary/AdminIconLibrary";
 import AdminProfile from "./pages/Admin/AdminProfile/AdminProfile";
 import AdminAddPage from "./pages/Admin/AdminAddPage/AdminAddPage";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
+import { useSiteIdentity } from "./hooks/useSiteIdentity";
 
 function App() {
   const pageLoading = usePageLoading();
+  useSiteIdentity();
 
   if (pageLoading) {
     return <LoadingScreen />;
@@ -69,6 +71,15 @@ function App() {
           }
         />
         <Route path="settings/icons" element={<AdminIconLibrary />} />
+        <Route
+          path="settings/site"
+          element={
+            <AdminResourceEditor
+              resourceKey="siteSettings"
+              title="نام و آیکون سایت"
+            />
+          }
+        />
         <Route path="settings/profile" element={<AdminProfile />} />
       </Route>
     </Routes>

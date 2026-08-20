@@ -145,6 +145,8 @@ const FIELD_LABELS = {
   iconAddres: "آیکون آدرس",
   iconAddresColor: "رنگ آیکون آدرس",
   iconAddresbg: "رنگ پس‌زمینه آیکون آدرس",
+  favicon: "آیکون سایت (فاویکون)",
+  siteTitle: "نام سایت",
 };
 
 export function getFieldLabel(key) {

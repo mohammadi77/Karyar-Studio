@@ -1838,6 +1838,76 @@
       "path": "/",
       "timestamp": 1786805445984,
       "id": "_gWZFfgCN9U"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787182224228,
+      "id": "aGV_JQc5Hhc"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787182412242,
+      "id": "XGPj-WayTC8"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787182435294,
+      "id": "vxVFsoFjTyc"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787182636051,
+      "id": "imDVyq2zdAU"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787182655529,
+      "id": "eMRdjiOp_mY"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787182872592,
+      "id": "Mnim99td0WM"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787183024905,
+      "id": "aH7OSTAHtnc"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787183182103,
+      "id": "kGrLDTppVyY"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787183438735,
+      "id": "_W2wbZnhjZw"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787183454812,
+      "id": "WA-tOHTUD0w"
+    },
+    {
+      "path": "/",
+      "timestamp": 1787183484453,
+      "id": "Cu5i_lpt7dA"
+    },
+    {
+      "path": "/Services",
+      "timestamp": 1787183531300,
+      "id": "nqYGvYfH3EM"
+    },
+    {
+      "path": "/AboutUs",
+      "timestamp": 1787183551330,
+      "id": "IBwLjo5NLsM"
+    },
+    {
+      "path": "/ContactUs",
+      "timestamp": 1787183761719,
+      "id": "660i5Oqpsnw"
     }
   ],
   "activeSessions": [
@@ -1954,7 +2024,29 @@
       "path": "/Services",
       "lastSeen": 1786805118041,
       "id": "8VrGuo6scX4"
+    },
+    {
+      "sessionId": "3328bfde-b351-4d01-b8e8-77e0e6dc79a0",
+      "path": "/",
+      "lastSeen": 1787184081300,
+      "id": "7yCU8fRoaec"
+    },
+    {
+      "sessionId": "56b16e43-9681-4a4d-b64c-6e42d9ba97e9",
+      "path": "/Services",
+      "lastSeen": 1787184095657,
+      "id": "pkeClxPODCg"
+    },
+    {
+      "sessionId": "25722846-e289-4358-a89a-6c8eed86d691",
+      "path": "/ContactUs",
+      "lastSeen": 1787184095227,
+      "id": "t4KTKG0-pkc"
     }
   ],
+  "siteSettings": {
+    "title": "کاریار استودیو",
+    "favicon": "/uploads/1787183354567-blboc8.svg"
+  },
   "$schema": "./node_modules/json-server/schema.json"
 }

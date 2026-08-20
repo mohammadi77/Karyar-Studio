@@ -4,4 +4,4 @@
 export const API_BASE_URL = import.meta.env.VITE_API_URL || "/api";
 export const UPLOAD_BASE_URL = import.meta.env.VITE_UPLOAD_URL || "";
 
-export const RESOURCE_KEYS = ["pages", "navbar", "notFound", "admin", "teamMembers", "iconLibrary", "teamSettings"];
+export const RESOURCE_KEYS = ["pages", "navbar", "notFound", "admin", "teamMembers", "iconLibrary", "teamSettings", "siteSettings"];

@@ -28,7 +28,7 @@ function AdminPageEditor() {
       <div>
         <p>صفحه مورد نظر پیدا نشد.</p>
         <Link to="/admin/pages" className="editor-back-link">
-          بازگشت به مدیریت صفحات
+          بازگشت به مدیریت صفحات منو
         </Link>
       </div>
     );
@@ -123,10 +123,13 @@ function AdminPageEditorForm({ page }) {
     }
   };
 
+  const backTo = page.showInMenu === false ? "/admin/add-page" : "/admin/pages";
+  const backLabel = page.showInMenu === false ? "افزودن صفحات (لینک)" : "مدیریت صفحات منو";
+
   return (
     <div>
-      <Link to="/admin/pages" className="editor-back-link">
-        ← بازگشت به مدیریت صفحات
+      <Link to={backTo} className="editor-back-link">
+        ← بازگشت به {backLabel}
       </Link>
 
       <div className="editor-header">

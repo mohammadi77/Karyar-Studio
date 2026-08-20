@@ -77,6 +77,10 @@
   flex-direction: column;
   gap: 10px;
 }
+.admin-addpage-card.disabled {
+  opacity: 0.6;
+  background: #fafafb;
+}
 .admin-addpage-card-head {
   display: flex;
   align-items: center;
@@ -87,14 +91,20 @@
   font-size: 16px;
   color: #2f4858;
 }
-.admin-addpage-badge {
+.admin-addpage-status {
   font-size: 11px;
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 999px;
   white-space: nowrap;
-  background: #fff4e0;
-  color: #c07800;
+}
+.admin-addpage-status.on {
+  background: #e2f2ea;
+  color: #1ea965;
+}
+.admin-addpage-status.off {
+  background: #fdecea;
+  color: #c0392b;
 }
 .admin-addpage-slug {
   font-size: 12px;
@@ -164,6 +174,18 @@
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
+}
+.admin-addpage-toggle-btn {
+  flex: 1;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #dcdfe3;
+  background: #ffffff;
+  color: #5c6a63;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
 }
 .admin-addpage-delete-btn {
   height: 40px;

@@ -79,7 +79,7 @@ function AdminLayout() {
               `admin-sidebar-link ${isActive ? "active" : ""}`
             }
           >
-            مدیریت صفحات
+            مدیریت صفحات منو
           </NavLink>
           <NavLink
             to="/admin/add-page"
@@ -88,7 +88,7 @@ function AdminLayout() {
               `admin-sidebar-link ${isActive ? "active" : ""}`
             }
           >
-            افزودن صفحه
+            افزودن صفحات (لینک)
           </NavLink>
           <NavLink
             to="/admin/team"
@@ -111,6 +111,15 @@ function AdminLayout() {
 
           <span className="admin-sidebar-section-title">تنظیمات سایت</span>
 
+          <NavLink
+            to="/admin/settings/site"
+            onClick={closeSidebar}
+            className={({ isActive }) =>
+              `admin-sidebar-link ${isActive ? "active" : ""}`
+            }
+          >
+            نام و آیکون سایت
+          </NavLink>
           <NavLink
             to="/admin/settings/navbar"
             onClick={closeSidebar}

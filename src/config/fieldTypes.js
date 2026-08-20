@@ -40,7 +40,7 @@ export const EXTRA_COLOR_KEYS = new Set([
 
 // کلیدهایی که مقدارشان مسیر/آدرس تصویر است ولی شامل کلمات معمول
 // (image, logo, img) نیستند
-export const EXTRA_IMAGE_KEYS = new Set(["src"]);
+export const EXTRA_IMAGE_KEYS = new Set(["src", "favicon"]);
 
 export function isIconNameField(key) {
   return ICON_NAME_KEYS.has(key);
